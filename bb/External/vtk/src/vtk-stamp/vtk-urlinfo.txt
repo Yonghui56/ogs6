@@ -1,0 +1,3 @@
+repository='external project URL'
+module='http://www.vtk.org/files/release/6.3/VTK-6.3.0.tar.gz'
+tag=''

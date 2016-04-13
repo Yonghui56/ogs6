@@ -1,0 +1,407 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{F38DF363-4368-3FA5-9AC2-61CF6C060F52}</ProjectGUID>
+    <WindowsTargetPlatformVersion>10.0.10586.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>vtksys</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\ogs\bb\External\vtk\src\vtk-build\bin\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">vtksys.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">vtksys-6.3</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\ogs\bb\External\vtk\src\vtk-build\bin\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">vtksys.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">vtksys-6.3</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\ogs\bb\External\vtk\src\vtk-build\bin\MinSizeRel\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">vtksys.dir\MinSizeRel\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">vtksys-6.3</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\ogs\bb\External\vtk\src\vtk-build\bin\RelWithDebInfo\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">vtksys.dir\RelWithDebInfo\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">vtksys-6.3</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\ogs\bb\External\vtk\src\vtk-build\Utilities\KWSys;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;VTK_IN_VTK;KWSYS_NAMESPACE=vtksys;UNICODE;_UNICODE;CMAKE_INTDIR="Debug";vtksys_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;VTK_IN_VTK;KWSYS_NAMESPACE=vtksys;UNICODE;_UNICODE;CMAKE_INTDIR=\"Debug\";vtksys_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\ogs\bb\External\vtk\src\vtk-build\Utilities\KWSys;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\ogs\bb\External\vtk\src\vtk-build\Utilities\KWSys;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;ws2_32.lib;Psapi.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/ogs/bb/External/vtk/src/vtk-build/lib/Debug/vtksys-6.3.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/ogs/bb/External/vtk/src/vtk-build/bin/Debug/vtksys-6.3.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\ogs\bb\External\vtk\src\vtk-build\Utilities\KWSys;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;VTK_IN_VTK;KWSYS_NAMESPACE=vtksys;UNICODE;_UNICODE;CMAKE_INTDIR="Release";vtksys_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;VTK_IN_VTK;KWSYS_NAMESPACE=vtksys;UNICODE;_UNICODE;CMAKE_INTDIR=\"Release\";vtksys_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\ogs\bb\External\vtk\src\vtk-build\Utilities\KWSys;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\ogs\bb\External\vtk\src\vtk-build\Utilities\KWSys;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;ws2_32.lib;Psapi.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/ogs/bb/External/vtk/src/vtk-build/lib/Release/vtksys-6.3.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/ogs/bb/External/vtk/src/vtk-build/bin/Release/vtksys-6.3.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\ogs\bb\External\vtk\src\vtk-build\Utilities\KWSys;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;VTK_IN_VTK;KWSYS_NAMESPACE=vtksys;UNICODE;_UNICODE;CMAKE_INTDIR="MinSizeRel";vtksys_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;VTK_IN_VTK;KWSYS_NAMESPACE=vtksys;UNICODE;_UNICODE;CMAKE_INTDIR=\"MinSizeRel\";vtksys_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\ogs\bb\External\vtk\src\vtk-build\Utilities\KWSys;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\ogs\bb\External\vtk\src\vtk-build\Utilities\KWSys;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;ws2_32.lib;Psapi.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/ogs/bb/External/vtk/src/vtk-build/lib/MinSizeRel/vtksys-6.3.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/ogs/bb/External/vtk/src/vtk-build/bin/MinSizeRel/vtksys-6.3.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\ogs\bb\External\vtk\src\vtk-build\Utilities\KWSys;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;VTK_IN_VTK;KWSYS_NAMESPACE=vtksys;UNICODE;_UNICODE;CMAKE_INTDIR="RelWithDebInfo";vtksys_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;VTK_IN_VTK;KWSYS_NAMESPACE=vtksys;UNICODE;_UNICODE;CMAKE_INTDIR=\"RelWithDebInfo\";vtksys_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\ogs\bb\External\vtk\src\vtk-build\Utilities\KWSys;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\ogs\bb\External\vtk\src\vtk-build\Utilities\KWSys;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;ws2_32.lib;Psapi.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/ogs/bb/External/vtk/src/vtk-build/lib/RelWithDebInfo/vtksys-6.3.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/ogs/bb/External/vtk/src/vtk-build/bin/RelWithDebInfo/vtksys-6.3.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule D:/ogs/bb/External/vtk/src/vtk/Utilities/KWSys/vtksys/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\CMake\bin\cmake.exe -HD:/ogs/bb/External/vtk/src/vtk -BD:/ogs/bb/External/vtk/src/vtk-build --check-stamp-file D:\ogs\bb\External\vtk\src\vtk-build\Utilities\KWSys\vtksys\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/ogs/bb/External/vtk/src/vtk/Utilities/KWSys/vtksys/CMakeLists.txt;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\CMakeLists.txt;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsysPlatformTests.cmake;C:\CMake\share\cmake-3.4\Modules\CheckTypeSize.cmake;C:\CMake\share\cmake-3.4\Modules\CheckIncludeFile.cmake;C:\CMake\share\cmake-3.4\Modules\CheckIncludeFileCXX.cmake;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsysPrivate.h;C:\CMake\share\cmake-3.4\Modules\CheckIncludeFiles.cmake;C:\CMake\share\cmake-3.4\Modules\CheckSymbolExists.cmake;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl_string.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_cstddef.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_ios_iostream.h.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_ios_fstream.h.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_ios_sstream.h.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_ios_iosfwd.h.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\Directory.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\DynamicLoader.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\Encoding.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\Glob.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\RegularExpression.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\SystemTools.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\CommandLineArguments.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\FStream.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\SystemInformation.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\Configure.h.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\SharedForward.h.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\Process.h.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\Base64.h.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\Encoding.h.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\FundamentalType.h.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\MD5.h.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\System.h.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\Configure.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\String.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\hashtable.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\hash_fun.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\hash_map.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\hash_set.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\auto_ptr.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\ogs\bb\External\vtk\src\vtk-build\Utilities\KWSys\vtksys\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule D:/ogs/bb/External/vtk/src/vtk/Utilities/KWSys/vtksys/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\CMake\bin\cmake.exe -HD:/ogs/bb/External/vtk/src/vtk -BD:/ogs/bb/External/vtk/src/vtk-build --check-stamp-file D:\ogs\bb\External\vtk\src\vtk-build\Utilities\KWSys\vtksys\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/ogs/bb/External/vtk/src/vtk/Utilities/KWSys/vtksys/CMakeLists.txt;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\CMakeLists.txt;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsysPlatformTests.cmake;C:\CMake\share\cmake-3.4\Modules\CheckTypeSize.cmake;C:\CMake\share\cmake-3.4\Modules\CheckIncludeFile.cmake;C:\CMake\share\cmake-3.4\Modules\CheckIncludeFileCXX.cmake;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsysPrivate.h;C:\CMake\share\cmake-3.4\Modules\CheckIncludeFiles.cmake;C:\CMake\share\cmake-3.4\Modules\CheckSymbolExists.cmake;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl_string.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_cstddef.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_ios_iostream.h.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_ios_fstream.h.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_ios_sstream.h.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_ios_iosfwd.h.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\Directory.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\DynamicLoader.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\Encoding.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\Glob.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\RegularExpression.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\SystemTools.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\CommandLineArguments.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\FStream.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\SystemInformation.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\Configure.h.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\SharedForward.h.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\Process.h.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\Base64.h.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\Encoding.h.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\FundamentalType.h.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\MD5.h.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\System.h.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\Configure.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\String.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\hashtable.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\hash_fun.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\hash_map.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\hash_set.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\auto_ptr.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\ogs\bb\External\vtk\src\vtk-build\Utilities\KWSys\vtksys\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule D:/ogs/bb/External/vtk/src/vtk/Utilities/KWSys/vtksys/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\CMake\bin\cmake.exe -HD:/ogs/bb/External/vtk/src/vtk -BD:/ogs/bb/External/vtk/src/vtk-build --check-stamp-file D:\ogs\bb\External\vtk\src\vtk-build\Utilities\KWSys\vtksys\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/ogs/bb/External/vtk/src/vtk/Utilities/KWSys/vtksys/CMakeLists.txt;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\CMakeLists.txt;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsysPlatformTests.cmake;C:\CMake\share\cmake-3.4\Modules\CheckTypeSize.cmake;C:\CMake\share\cmake-3.4\Modules\CheckIncludeFile.cmake;C:\CMake\share\cmake-3.4\Modules\CheckIncludeFileCXX.cmake;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsysPrivate.h;C:\CMake\share\cmake-3.4\Modules\CheckIncludeFiles.cmake;C:\CMake\share\cmake-3.4\Modules\CheckSymbolExists.cmake;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl_string.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_cstddef.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_ios_iostream.h.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_ios_fstream.h.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_ios_sstream.h.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_ios_iosfwd.h.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\Directory.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\DynamicLoader.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\Encoding.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\Glob.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\RegularExpression.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\SystemTools.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\CommandLineArguments.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\FStream.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\SystemInformation.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\Configure.h.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\SharedForward.h.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\Process.h.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\Base64.h.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\Encoding.h.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\FundamentalType.h.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\MD5.h.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\System.h.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\Configure.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\String.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\hashtable.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\hash_fun.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\hash_map.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\hash_set.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\auto_ptr.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\ogs\bb\External\vtk\src\vtk-build\Utilities\KWSys\vtksys\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule D:/ogs/bb/External/vtk/src/vtk/Utilities/KWSys/vtksys/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\CMake\bin\cmake.exe -HD:/ogs/bb/External/vtk/src/vtk -BD:/ogs/bb/External/vtk/src/vtk-build --check-stamp-file D:\ogs\bb\External\vtk\src\vtk-build\Utilities\KWSys\vtksys\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/ogs/bb/External/vtk/src/vtk/Utilities/KWSys/vtksys/CMakeLists.txt;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\CMakeLists.txt;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsysPlatformTests.cmake;C:\CMake\share\cmake-3.4\Modules\CheckTypeSize.cmake;C:\CMake\share\cmake-3.4\Modules\CheckIncludeFile.cmake;C:\CMake\share\cmake-3.4\Modules\CheckIncludeFileCXX.cmake;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsysPrivate.h;C:\CMake\share\cmake-3.4\Modules\CheckIncludeFiles.cmake;C:\CMake\share\cmake-3.4\Modules\CheckSymbolExists.cmake;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl_string.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_stl.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_cstddef.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_ios_iostream.h.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_ios_fstream.h.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_ios_sstream.h.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\kwsys_ios_iosfwd.h.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\Directory.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\DynamicLoader.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\Encoding.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\Glob.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\RegularExpression.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\SystemTools.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\CommandLineArguments.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\FStream.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\SystemInformation.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\Configure.h.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\SharedForward.h.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\Process.h.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\Base64.h.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\Encoding.h.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\FundamentalType.h.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\MD5.h.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\System.h.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\Configure.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\String.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\hashtable.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\hash_fun.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\hash_map.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\hash_set.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\auto_ptr.hxx.in;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\ogs\bb\External\vtk\src\vtk-build\Utilities\KWSys\vtksys\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk-build\Utilities\KWSys\vtksys\Configure.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk-build\Utilities\KWSys\vtksys\SharedForward.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk-build\Utilities\KWSys\vtksys\Process.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk-build\Utilities\KWSys\vtksys\Base64.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk-build\Utilities\KWSys\vtksys\Encoding.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk-build\Utilities\KWSys\vtksys\FundamentalType.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk-build\Utilities\KWSys\vtksys\MD5.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk-build\Utilities\KWSys\vtksys\System.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk-build\Utilities\KWSys\vtksys\Directory.hxx" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk-build\Utilities\KWSys\vtksys\DynamicLoader.hxx" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk-build\Utilities\KWSys\vtksys\Encoding.hxx" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk-build\Utilities\KWSys\vtksys\Glob.hxx" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk-build\Utilities\KWSys\vtksys\RegularExpression.hxx" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk-build\Utilities\KWSys\vtksys\SystemTools.hxx" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk-build\Utilities\KWSys\vtksys\CommandLineArguments.hxx" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk-build\Utilities\KWSys\vtksys\FStream.hxx" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk-build\Utilities\KWSys\vtksys\SystemInformation.hxx" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk-build\Utilities\KWSys\vtksys\Configure.hxx" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk-build\Utilities\KWSys\vtksys\String.hxx" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk-build\Utilities\KWSys\vtksys\hashtable.hxx" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk-build\Utilities\KWSys\vtksys\hash_fun.hxx" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk-build\Utilities\KWSys\vtksys\hash_map.hxx" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk-build\Utilities\KWSys\vtksys\hash_set.hxx" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk-build\Utilities\KWSys\vtksys\auto_ptr.hxx" />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\ProcessWin32.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\Base64.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\EncodingC.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">KWSYS_ENCODING_DEFAULT_CODEPAGE=CP_ACP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">KWSYS_ENCODING_DEFAULT_CODEPAGE=CP_ACP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">KWSYS_ENCODING_DEFAULT_CODEPAGE=CP_ACP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">KWSYS_ENCODING_DEFAULT_CODEPAGE=CP_ACP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\MD5.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\System.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">KWSYS_C_HAS_PTRDIFF_T=1;KWSYS_C_HAS_SSIZE_T=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">KWSYS_C_HAS_PTRDIFF_T=1;KWSYS_C_HAS_SSIZE_T=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">KWSYS_C_HAS_PTRDIFF_T=1;KWSYS_C_HAS_SSIZE_T=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">KWSYS_C_HAS_PTRDIFF_T=1;KWSYS_C_HAS_SSIZE_T=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\Directory.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\DynamicLoader.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\EncodingCXX.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\Glob.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\RegularExpression.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\SystemTools.cxx" >
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">KWSYS_CXX_HAS_SETENV=0;KWSYS_CXX_HAS_UNSETENV=0;KWSYS_CXX_HAS_ENVIRON_IN_STDLIB_H=1;KWSYS_CXX_HAS_UTIMES=0;KWSYS_CXX_HAS_UTIMENSAT=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">KWSYS_CXX_HAS_SETENV=0;KWSYS_CXX_HAS_UNSETENV=0;KWSYS_CXX_HAS_ENVIRON_IN_STDLIB_H=1;KWSYS_CXX_HAS_UTIMES=0;KWSYS_CXX_HAS_UTIMENSAT=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">KWSYS_CXX_HAS_SETENV=0;KWSYS_CXX_HAS_UNSETENV=0;KWSYS_CXX_HAS_ENVIRON_IN_STDLIB_H=1;KWSYS_CXX_HAS_UTIMES=0;KWSYS_CXX_HAS_UTIMENSAT=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">KWSYS_CXX_HAS_SETENV=0;KWSYS_CXX_HAS_UNSETENV=0;KWSYS_CXX_HAS_ENVIRON_IN_STDLIB_H=1;KWSYS_CXX_HAS_UTIMES=0;KWSYS_CXX_HAS_UTIMENSAT=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\CommandLineArguments.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\FStream.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys\vtksys\SystemInformation.cxx" >
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">SIZEOF_VOID_P=4;KWSYS_SYS_HAS_PSAPI=1;KWSYS_CXX_HAS_ATOL=1;KWSYS_CXX_HAS_ATOLL=1;KWSYS_CXX_HAS__ATOI64=1;KWSYS_USE_LONG_LONG=1;KWSYS_BUILD_SHARED=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">SIZEOF_VOID_P=4;KWSYS_SYS_HAS_PSAPI=1;KWSYS_CXX_HAS_ATOL=1;KWSYS_CXX_HAS_ATOLL=1;KWSYS_CXX_HAS__ATOI64=1;KWSYS_USE_LONG_LONG=1;KWSYS_BUILD_SHARED=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">SIZEOF_VOID_P=4;KWSYS_SYS_HAS_PSAPI=1;KWSYS_CXX_HAS_ATOL=1;KWSYS_CXX_HAS_ATOLL=1;KWSYS_CXX_HAS__ATOI64=1;KWSYS_USE_LONG_LONG=1;KWSYS_BUILD_SHARED=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">SIZEOF_VOID_P=4;KWSYS_SYS_HAS_PSAPI=1;KWSYS_CXX_HAS_ATOL=1;KWSYS_CXX_HAS_ATOLL=1;KWSYS_CXX_HAS__ATOI64=1;KWSYS_USE_LONG_LONG=1;KWSYS_BUILD_SHARED=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/ogs/bb/External/vtk/src/vtk-build/ZERO_CHECK.vcxproj">
+      <Project>9768661C-653F-37EA-AE11-2D8068F19408</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

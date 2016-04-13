@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\IO\Core\vtkAbstractParticleWriter.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\IO\Core\vtkArrayReader.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\IO\Core\vtkArrayWriter.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\IO\Core\vtkASCIITextCodec.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\IO\Core\vtkBase64InputStream.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\IO\Core\vtkBase64OutputStream.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\IO\Core\vtkBase64Utilities.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\IO\Core\vtkDataCompressor.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\IO\Core\vtkDelimitedTextWriter.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\IO\Core\vtkGlobFileNames.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\IO\Core\vtkInputStream.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\IO\Core\vtkJavaScriptDataWriter.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\IO\Core\vtkOutputStream.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\IO\Core\vtkSortFileNames.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\IO\Core\vtkTextCodec.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\IO\Core\vtkTextCodecFactory.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\IO\Core\vtkUTF16TextCodec.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\IO\Core\vtkUTF8TextCodec.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\IO\Core\vtkAbstractPolyDataReader.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\IO\Core\vtkWriter.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\IO\Core\vtkZLibDataCompressor.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\IO\Core\vtkArrayDataReader.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\IO\Core\vtkArrayDataWriter.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\IO\Core\vtkAbstractParticleWriter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\IO\Core\vtkArrayReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\IO\Core\vtkArrayWriter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\IO\Core\vtkASCIITextCodec.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\IO\Core\vtkBase64InputStream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\IO\Core\vtkBase64OutputStream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\IO\Core\vtkBase64Utilities.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\IO\Core\vtkDataCompressor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\IO\Core\vtkDelimitedTextWriter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\IO\Core\vtkGlobFileNames.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\IO\Core\vtkInputStream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\IO\Core\vtkJavaScriptDataWriter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\IO\Core\vtkOutputStream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\IO\Core\vtkSortFileNames.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\IO\Core\vtkTextCodec.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\IO\Core\vtkTextCodecFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\IO\Core\vtkUTF16TextCodec.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\IO\Core\vtkUTF8TextCodec.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\IO\Core\vtkAbstractPolyDataReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\IO\Core\vtkWriter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\IO\Core\vtkZLibDataCompressor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\IO\Core\vtkArrayDataReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\IO\Core\vtkArrayDataWriter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk-build\IO\Core\vtkIOCoreModule.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\ogs\bb\External\vtk\src\vtk\IO\Core\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{E1451A22-0974-3995-9080-C779BFA1C7DF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{5EEAB83B-6272-3755-8CC6-A40A48DEC7C3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

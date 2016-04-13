@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkRTXMLPolyDataReader.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLCompositeDataReader.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLCompositeDataWriter.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLDataReader.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLDataSetWriter.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLFileReadTester.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLGenericDataObjectReader.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLHierarchicalBoxDataFileConverter.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLHierarchicalBoxDataReader.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLHierarchicalBoxDataWriter.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLHierarchicalDataReader.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLHyperOctreeReader.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLHyperOctreeWriter.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLImageDataReader.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLImageDataWriter.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLMultiBlockDataReader.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLMultiBlockDataWriter.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLMultiGroupDataReader.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLPDataReader.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLPImageDataReader.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLPolyDataReader.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLPolyDataWriter.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLPPolyDataReader.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLPRectilinearGridReader.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLPStructuredDataReader.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLPStructuredGridReader.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLPUnstructuredDataReader.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLPUnstructuredGridReader.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLReader.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLRectilinearGridReader.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLRectilinearGridWriter.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLStructuredDataReader.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLStructuredDataWriter.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLStructuredGridReader.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLStructuredGridWriter.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLUniformGridAMRReader.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLUniformGridAMRWriter.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLUnstructuredDataReader.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLUnstructuredDataWriter.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLUnstructuredGridReader.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLUnstructuredGridWriter.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLWriterC.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLWriter.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkRTXMLPolyDataReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLCompositeDataReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLCompositeDataWriter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLDataReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLDataSetWriter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLFileReadTester.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLGenericDataObjectReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLHierarchicalBoxDataFileConverter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLHierarchicalBoxDataReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLHierarchicalBoxDataWriter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLHierarchicalDataReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLHyperOctreeReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLHyperOctreeWriter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLImageDataReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLImageDataWriter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLMultiBlockDataReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLMultiBlockDataWriter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLMultiGroupDataReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLPDataReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLPImageDataReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLPolyDataReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLPolyDataWriter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLPPolyDataReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLPRectilinearGridReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLPStructuredDataReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLPStructuredGridReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLPUnstructuredDataReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLPUnstructuredGridReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLRectilinearGridReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLRectilinearGridWriter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLStructuredDataReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLStructuredDataWriter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLStructuredGridReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLStructuredGridWriter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLUniformGridAMRReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLUniformGridAMRWriter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLUnstructuredDataReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLUnstructuredDataWriter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLUnstructuredGridReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLUnstructuredGridWriter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLWriterC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\vtkXMLWriter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk-build\IO\XML\vtkIOXMLModule.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\ogs\bb\External\vtk\src\vtk\IO\XML\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{E1451A22-0974-3995-9080-C779BFA1C7DF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{5EEAB83B-6272-3755-8CC6-A40A48DEC7C3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

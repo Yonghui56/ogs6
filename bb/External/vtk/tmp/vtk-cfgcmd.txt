@@ -1,0 +1,1 @@
+cmd='C:/CMake/bin/cmake.exe;-Wno-dev;-CD:/ogs/bb/External/vtk/tmp/vtk-cache-$<CONFIG>.cmake;-GVisual Studio 14 2015;D:/ogs/bb/External/vtk/src/vtk'

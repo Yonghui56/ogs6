@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\ogs\BaseLib\ConfigTree.cpp">
+      <Filter>BaseLib</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\BaseLib\ConfigTreeUtil.cpp">
+      <Filter>BaseLib</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\BaseLib\DateTools.cpp">
+      <Filter>BaseLib</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\BaseLib\FileTools.cpp">
+      <Filter>BaseLib</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\BaseLib\MemWatch.cpp">
+      <Filter>BaseLib</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\BaseLib\StringTools.cpp">
+      <Filter>BaseLib</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\BaseLib\BuildInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\ogs\BaseLib\BuildInfo.h">
+      <Filter>BaseLib</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\BaseLib\CodingTools.h">
+      <Filter>BaseLib</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\BaseLib\ConfigTree-impl.h">
+      <Filter>BaseLib</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\BaseLib\ConfigTree.h">
+      <Filter>BaseLib</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\BaseLib\ConfigTreeUtil.h">
+      <Filter>BaseLib</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\BaseLib\Counter.h">
+      <Filter>BaseLib</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\BaseLib\CPUTime.h">
+      <Filter>BaseLib</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\BaseLib\DateTools.h">
+      <Filter>BaseLib</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\BaseLib\DebugTools.h">
+      <Filter>BaseLib</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\BaseLib\excludeObjectCopy.h">
+      <Filter>BaseLib</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\BaseLib\FileFinder.h">
+      <Filter>BaseLib</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\BaseLib\FileTools.h">
+      <Filter>BaseLib</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\BaseLib\Histogram.h">
+      <Filter>BaseLib</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\BaseLib\LogogCustomCout.h">
+      <Filter>BaseLib</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\BaseLib\LogogSimpleFormatter.h">
+      <Filter>BaseLib</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\BaseLib\MemWatch.h">
+      <Filter>BaseLib</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\BaseLib\quicksort.h">
+      <Filter>BaseLib</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\BaseLib\RangeValidator-impl.h">
+      <Filter>BaseLib</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\BaseLib\RangeValidator.h">
+      <Filter>BaseLib</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\BaseLib\RunTime.h">
+      <Filter>BaseLib</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\BaseLib\StringTools.h">
+      <Filter>BaseLib</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\BaseLib\Subdivision.h">
+      <Filter>BaseLib</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\BaseLib\SystemTools.h">
+      <Filter>BaseLib</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\BaseLib\TCLAPCustomOutput.h">
+      <Filter>BaseLib</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\BaseLib\TemplateLogogFormatterSuppressedGCC-impl.h">
+      <Filter>BaseLib</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\BaseLib\TemplateLogogFormatterSuppressedGCC.h">
+      <Filter>BaseLib</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\BaseLib\uniqueInsert.h">
+      <Filter>BaseLib</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\BaseLib\wait.h">
+      <Filter>BaseLib</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\ogs\BaseLib\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{459161DB-6E77-3F26-990F-4243C72DA12C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BaseLib">
+      <UniqueIdentifier>{786D922D-4080-34BB-ACA6-76E42380B1A9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

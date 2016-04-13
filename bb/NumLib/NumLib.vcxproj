@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{22B5701C-CBD3-318E-916D-70EFFFE6D7FC}</ProjectGUID>
+    <WindowsTargetPlatformVersion>10.0.10586.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>NumLib</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\ogs\bb\lib\RelWithDebInfo\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">NumLib.dir\RelWithDebInfo\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">NumLib</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\ogs\bb\lib\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NumLib.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NumLib</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\ogs\bb\lib\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NumLib.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NumLib</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /bigobj /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\ogs\bb\NumLib;D:\ogs\NumLib;D:\ogs;D:\ogs\bb\External\boost\src\Boost;C:\libs\include\eigen3;D:\ogs\ThirdParty;D:\ogs\ThirdParty\gtest\include;D:\ogs\ThirdParty\autocheck\include;D:\ogs\ThirdParty\tclap\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4290;4267;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;ENDIAN_IS_LITTLE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;_CRT_XNONSTDC_NO_WARNINGS;__restrict__=__restrict;NOMINMAX;OPENMP_LOOP_TYPE=int;LOGOG_LEVEL=LOGOG_LEVEL_INFO;EIGEN_INITIALIZE_MATRICES_BY_ZERO;OGS_USE_EIGEN;OGS_EIGEN_DYNAMIC_SHAPE_MATRICES;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;ENDIAN_IS_LITTLE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;_CRT_XNONSTDC_NO_WARNINGS;__restrict__=__restrict;NOMINMAX;OPENMP_LOOP_TYPE=int;LOGOG_LEVEL=LOGOG_LEVEL_INFO;EIGEN_INITIALIZE_MATRICES_BY_ZERO;OGS_USE_EIGEN;OGS_EIGEN_DYNAMIC_SHAPE_MATRICES;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\ogs\bb\NumLib;D:\ogs\NumLib;D:\ogs;D:\ogs\bb\External\boost\src\Boost;C:\libs\include\eigen3;D:\ogs\ThirdParty;D:\ogs\ThirdParty\gtest\include;D:\ogs\ThirdParty\autocheck\include;D:\ogs\ThirdParty\tclap\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\ogs\bb\NumLib;D:\ogs\NumLib;D:\ogs;D:\ogs\bb\External\boost\src\Boost;C:\libs\include\eigen3;D:\ogs\ThirdParty;D:\ogs\ThirdParty\gtest\include;D:\ogs\ThirdParty\autocheck\include;D:\ogs\ThirdParty\tclap\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /bigobj /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\ogs\bb\NumLib;D:\ogs\NumLib;D:\ogs;D:\ogs\bb\External\boost\src\Boost;C:\libs\include\eigen3;D:\ogs\ThirdParty;D:\ogs\ThirdParty\gtest\include;D:\ogs\ThirdParty\autocheck\include;D:\ogs\ThirdParty\tclap\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4290;4267;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;ENDIAN_IS_LITTLE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;_CRT_XNONSTDC_NO_WARNINGS;__restrict__=__restrict;NOMINMAX;OPENMP_LOOP_TYPE=int;LOGOG_LEVEL=LOGOG_LEVEL_INFO;EIGEN_INITIALIZE_MATRICES_BY_ZERO;OGS_USE_EIGEN;OGS_EIGEN_DYNAMIC_SHAPE_MATRICES;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;ENDIAN_IS_LITTLE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;_CRT_XNONSTDC_NO_WARNINGS;__restrict__=__restrict;NOMINMAX;OPENMP_LOOP_TYPE=int;LOGOG_LEVEL=LOGOG_LEVEL_INFO;EIGEN_INITIALIZE_MATRICES_BY_ZERO;OGS_USE_EIGEN;OGS_EIGEN_DYNAMIC_SHAPE_MATRICES;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\ogs\bb\NumLib;D:\ogs\NumLib;D:\ogs;D:\ogs\bb\External\boost\src\Boost;C:\libs\include\eigen3;D:\ogs\ThirdParty;D:\ogs\ThirdParty\gtest\include;D:\ogs\ThirdParty\autocheck\include;D:\ogs\ThirdParty\tclap\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\ogs\bb\NumLib;D:\ogs\NumLib;D:\ogs;D:\ogs\bb\External\boost\src\Boost;C:\libs\include\eigen3;D:\ogs\ThirdParty;D:\ogs\ThirdParty\gtest\include;D:\ogs\ThirdParty\autocheck\include;D:\ogs\ThirdParty\tclap\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /bigobj /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\ogs\bb\NumLib;D:\ogs\NumLib;D:\ogs;D:\ogs\bb\External\boost\src\Boost;C:\libs\include\eigen3;D:\ogs\ThirdParty;D:\ogs\ThirdParty\gtest\include;D:\ogs\ThirdParty\autocheck\include;D:\ogs\ThirdParty\tclap\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4290;4267;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;ENDIAN_IS_LITTLE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;_CRT_XNONSTDC_NO_WARNINGS;__restrict__=__restrict;NOMINMAX;OPENMP_LOOP_TYPE=int;LOGOG_LEVEL=LOGOG_LEVEL_INFO;EIGEN_INITIALIZE_MATRICES_BY_ZERO;OGS_USE_EIGEN;OGS_EIGEN_DYNAMIC_SHAPE_MATRICES;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;ENDIAN_IS_LITTLE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;_CRT_XNONSTDC_NO_WARNINGS;__restrict__=__restrict;NOMINMAX;OPENMP_LOOP_TYPE=int;LOGOG_LEVEL=LOGOG_LEVEL_INFO;EIGEN_INITIALIZE_MATRICES_BY_ZERO;OGS_USE_EIGEN;OGS_EIGEN_DYNAMIC_SHAPE_MATRICES;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\ogs\bb\NumLib;D:\ogs\NumLib;D:\ogs;D:\ogs\bb\External\boost\src\Boost;C:\libs\include\eigen3;D:\ogs\ThirdParty;D:\ogs\ThirdParty\gtest\include;D:\ogs\ThirdParty\autocheck\include;D:\ogs\ThirdParty\tclap\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\ogs\bb\NumLib;D:\ogs\NumLib;D:\ogs;D:\ogs\bb\External\boost\src\Boost;C:\libs\include\eigen3;D:\ogs\ThirdParty;D:\ogs\ThirdParty\gtest\include;D:\ogs\ThirdParty\autocheck\include;D:\ogs\ThirdParty\tclap\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\ogs\NumLib\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule D:/ogs/NumLib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\CMake\bin\cmake.exe -HD:/ogs -BD:/ogs/bb --check-stamp-file D:\ogs\bb\NumLib\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/ogs/NumLib/CMakeLists.txt;D:\ogs\NumLib\CMakeLists.txt;D:\ogs\NumLib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\ogs\bb\NumLib\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule D:/ogs/NumLib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\CMake\bin\cmake.exe -HD:/ogs -BD:/ogs/bb --check-stamp-file D:\ogs\bb\NumLib\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/ogs/NumLib/CMakeLists.txt;D:\ogs\NumLib\CMakeLists.txt;D:\ogs\NumLib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\ogs\bb\NumLib\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule D:/ogs/NumLib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\CMake\bin\cmake.exe -HD:/ogs -BD:/ogs/bb --check-stamp-file D:\ogs\bb\NumLib\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/ogs/NumLib/CMakeLists.txt;D:\ogs\NumLib\CMakeLists.txt;D:\ogs\NumLib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\ogs\bb\NumLib\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\ogs\NumLib\Fem\ShapeMatrixPolicy.h" />
+    <ClInclude Include="D:\ogs\NumLib\Fem\CoordinatesMapping\NaturalCoordinatesMapping-impl.h" />
+    <ClInclude Include="D:\ogs\NumLib\Fem\CoordinatesMapping\NaturalCoordinatesMapping.h" />
+    <ClInclude Include="D:\ogs\NumLib\Fem\CoordinatesMapping\ShapeMatrices-impl.h" />
+    <ClInclude Include="D:\ogs\NumLib\Fem\CoordinatesMapping\ShapeMatrices.h" />
+    <ClInclude Include="D:\ogs\NumLib\Fem\FiniteElement\C0IsoparametricElements.h" />
+    <ClInclude Include="D:\ogs\NumLib\Fem\FiniteElement\TemplateIsoparametric.h" />
+    <ClInclude Include="D:\ogs\NumLib\Fem\Integration\GaussIntegrationPolicy.h" />
+    <ClInclude Include="D:\ogs\NumLib\Fem\Integration\IntegrationGaussPrism.h" />
+    <ClInclude Include="D:\ogs\NumLib\Fem\Integration\IntegrationGaussPyramid.h" />
+    <ClInclude Include="D:\ogs\NumLib\Fem\Integration\IntegrationGaussRegular-impl.h" />
+    <ClInclude Include="D:\ogs\NumLib\Fem\Integration\IntegrationGaussRegular.h" />
+    <ClInclude Include="D:\ogs\NumLib\Fem\Integration\IntegrationGaussTet.h" />
+    <ClInclude Include="D:\ogs\NumLib\Fem\Integration\IntegrationGaussTri.h" />
+    <ClInclude Include="D:\ogs\NumLib\Fem\Integration\IntegrationPoint.h" />
+    <ClInclude Include="D:\ogs\NumLib\Fem\ShapeFunction\ShapeHex20-impl.h" />
+    <ClInclude Include="D:\ogs\NumLib\Fem\ShapeFunction\ShapeHex20.h" />
+    <ClInclude Include="D:\ogs\NumLib\Fem\ShapeFunction\ShapeHex8-impl.h" />
+    <ClInclude Include="D:\ogs\NumLib\Fem\ShapeFunction\ShapeHex8.h" />
+    <ClInclude Include="D:\ogs\NumLib\Fem\ShapeFunction\ShapeLine2-impl.h" />
+    <ClInclude Include="D:\ogs\NumLib\Fem\ShapeFunction\ShapeLine2.h" />
+    <ClInclude Include="D:\ogs\NumLib\Fem\ShapeFunction\ShapeLine3-impl.h" />
+    <ClInclude Include="D:\ogs\NumLib\Fem\ShapeFunction\ShapeLine3.h" />
+    <ClInclude Include="D:\ogs\NumLib\Fem\ShapeFunction\ShapePoint1-impl.h" />
+    <ClInclude Include="D:\ogs\NumLib\Fem\ShapeFunction\ShapePoint1.h" />
+    <ClInclude Include="D:\ogs\NumLib\Fem\ShapeFunction\ShapePrism15-impl.h" />
+    <ClInclude Include="D:\ogs\NumLib\Fem\ShapeFunction\ShapePrism15.h" />
+    <ClInclude Include="D:\ogs\NumLib\Fem\ShapeFunction\ShapePrism6-impl.h" />
+    <ClInclude Include="D:\ogs\NumLib\Fem\ShapeFunction\ShapePrism6.h" />
+    <ClInclude Include="D:\ogs\NumLib\Fem\ShapeFunction\ShapePyra13-impl.h" />
+    <ClInclude Include="D:\ogs\NumLib\Fem\ShapeFunction\ShapePyra13.h" />
+    <ClInclude Include="D:\ogs\NumLib\Fem\ShapeFunction\ShapePyra5-impl.h" />
+    <ClInclude Include="D:\ogs\NumLib\Fem\ShapeFunction\ShapePyra5.h" />
+    <ClInclude Include="D:\ogs\NumLib\Fem\ShapeFunction\ShapeQuad4-impl.h" />
+    <ClInclude Include="D:\ogs\NumLib\Fem\ShapeFunction\ShapeQuad4.h" />
+    <ClInclude Include="D:\ogs\NumLib\Fem\ShapeFunction\ShapeQuad8-impl.h" />
+    <ClInclude Include="D:\ogs\NumLib\Fem\ShapeFunction\ShapeQuad8.h" />
+    <ClInclude Include="D:\ogs\NumLib\Fem\ShapeFunction\ShapeQuad9-impl.h" />
+    <ClInclude Include="D:\ogs\NumLib\Fem\ShapeFunction\ShapeQuad9.h" />
+    <ClInclude Include="D:\ogs\NumLib\Fem\ShapeFunction\ShapeTet10-impl.h" />
+    <ClInclude Include="D:\ogs\NumLib\Fem\ShapeFunction\ShapeTet10.h" />
+    <ClInclude Include="D:\ogs\NumLib\Fem\ShapeFunction\ShapeTet4-impl.h" />
+    <ClInclude Include="D:\ogs\NumLib\Fem\ShapeFunction\ShapeTet4.h" />
+    <ClInclude Include="D:\ogs\NumLib\Fem\ShapeFunction\ShapeTri3-impl.h" />
+    <ClInclude Include="D:\ogs\NumLib\Fem\ShapeFunction\ShapeTri3.h" />
+    <ClInclude Include="D:\ogs\NumLib\Fem\ShapeFunction\ShapeTri6-impl.h" />
+    <ClInclude Include="D:\ogs\NumLib\Fem\ShapeFunction\ShapeTri6.h" />
+    <ClInclude Include="D:\ogs\NumLib\TimeStepping\TimeStep.h" />
+    <ClInclude Include="D:\ogs\NumLib\TimeStepping\Algorithms\FixedTimeStepping.h" />
+    <ClInclude Include="D:\ogs\NumLib\TimeStepping\Algorithms\IterationNumberBasedAdaptiveTimeStepping.h" />
+    <ClInclude Include="D:\ogs\NumLib\TimeStepping\Algorithms\ITimeStepAlgorithm.h" />
+    <ClInclude Include="D:\ogs\NumLib\Function\Interpolation.h" />
+    <ClInclude Include="D:\ogs\NumLib\Function\ISpatialFunction.h" />
+    <ClInclude Include="D:\ogs\NumLib\Function\LinearInterpolationAlongPolyline.h" />
+    <ClInclude Include="D:\ogs\NumLib\Function\LinearInterpolationOnSurface.h" />
+    <ClInclude Include="D:\ogs\NumLib\Function\SpatialFunctionLinear.h" />
+    <ClInclude Include="D:\ogs\NumLib\Function\TemplateSpatialFunction.h" />
+    <ClInclude Include="D:\ogs\NumLib\Distribution\Distribution.h" />
+    <ClInclude Include="D:\ogs\NumLib\ODESolver\EquationSystem.h" />
+    <ClInclude Include="D:\ogs\NumLib\ODESolver\MatrixTranslator.h" />
+    <ClInclude Include="D:\ogs\NumLib\ODESolver\NonlinearSolver-impl.h" />
+    <ClInclude Include="D:\ogs\NumLib\ODESolver\NonlinearSolver.h" />
+    <ClInclude Include="D:\ogs\NumLib\ODESolver\NonlinearSystem.h" />
+    <ClInclude Include="D:\ogs\NumLib\ODESolver\ODESystem.h" />
+    <ClInclude Include="D:\ogs\NumLib\ODESolver\TimeDiscretization.h" />
+    <ClInclude Include="D:\ogs\NumLib\ODESolver\TimeDiscretizationBuilder.h" />
+    <ClInclude Include="D:\ogs\NumLib\ODESolver\TimeDiscretizedODESystem.h" />
+    <ClInclude Include="D:\ogs\NumLib\ODESolver\TimeLoopSingleODE.h" />
+    <ClInclude Include="D:\ogs\NumLib\ODESolver\Types.h" />
+    <ClCompile Include="D:\ogs\NumLib\Fem\ShapeFunction\ShapeStaticConsts.cpp"  />
+    <ClCompile Include="D:\ogs\NumLib\TimeStepping\Algorithms\FixedTimeStepping.cpp"  />
+    <ClCompile Include="D:\ogs\NumLib\TimeStepping\Algorithms\IterationNumberBasedAdaptiveTimeStepping.cpp"  />
+    <ClCompile Include="D:\ogs\NumLib\Function\LinearInterpolationAlongPolyline.cpp"  />
+    <ClCompile Include="D:\ogs\NumLib\Function\LinearInterpolationOnSurface.cpp"  />
+    <ClCompile Include="D:\ogs\NumLib\Distribution\Distribution.cpp"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/ogs/bb/ZERO_CHECK.vcxproj">
+      <Project>5D314217-4B27-38AC-925F-9EB30DDEF460</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/ogs/bb/Boost.vcxproj">
+      <Project>5EDBED25-1A0A-31A1-8653-643247264E77</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

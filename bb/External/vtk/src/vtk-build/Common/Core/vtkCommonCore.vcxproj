@@ -1,0 +1,716 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{94DE92FF-F136-3C2D-8CA1-BCBE74387207}</ProjectGUID>
+    <WindowsTargetPlatformVersion>10.0.10586.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>vtkCommonCore</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\ogs\bb\External\vtk\src\vtk-build\bin\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">vtkCommonCore.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">vtkCommonCore-6.3</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\ogs\bb\External\vtk\src\vtk-build\bin\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">vtkCommonCore.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">vtkCommonCore-6.3</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\ogs\bb\External\vtk\src\vtk-build\bin\MinSizeRel\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">vtkCommonCore.dir\MinSizeRel\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">vtkCommonCore-6.3</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\ogs\bb\External\vtk\src\vtk-build\bin\RelWithDebInfo\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">vtkCommonCore.dir\RelWithDebInfo\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">vtkCommonCore-6.3</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\ogs\bb\External\vtk\src\vtk\ThirdParty\utf8\source;D:\ogs\bb\External\vtk\src\vtk-build\Common\DataModel;D:\ogs\bb\External\vtk\src\vtk-build\Utilities\KWSys;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys;D:\ogs\bb\External\vtk\src\vtk-build\Common\Core;D:\ogs\bb\External\vtk\src\vtk\Common\Core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;VTK_IN_VTK;CMAKE_INTDIR="Debug";vtkCommonCore_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;VTK_IN_VTK;CMAKE_INTDIR=\"Debug\";vtkCommonCore_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\ogs\bb\External\vtk\src\vtk\ThirdParty\utf8\source;D:\ogs\bb\External\vtk\src\vtk-build\Common\DataModel;D:\ogs\bb\External\vtk\src\vtk-build\Utilities\KWSys;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys;D:\ogs\bb\External\vtk\src\vtk-build\Common\Core;D:\ogs\bb\External\vtk\src\vtk\Common\Core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\ogs\bb\External\vtk\src\vtk\ThirdParty\utf8\source;D:\ogs\bb\External\vtk\src\vtk-build\Common\DataModel;D:\ogs\bb\External\vtk\src\vtk-build\Utilities\KWSys;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys;D:\ogs\bb\External\vtk\src\vtk-build\Common\Core;D:\ogs\bb\External\vtk\src\vtk\Common\Core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\lib\Debug\vtksys-6.3.lib;ws2_32.lib;Psapi.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/ogs/bb/External/vtk/src/vtk-build/lib/Debug/vtkCommonCore-6.3.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/ogs/bb/External/vtk/src/vtk-build/bin/Debug/vtkCommonCore-6.3.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\ogs\bb\External\vtk\src\vtk\ThirdParty\utf8\source;D:\ogs\bb\External\vtk\src\vtk-build\Common\DataModel;D:\ogs\bb\External\vtk\src\vtk-build\Utilities\KWSys;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys;D:\ogs\bb\External\vtk\src\vtk-build\Common\Core;D:\ogs\bb\External\vtk\src\vtk\Common\Core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;VTK_IN_VTK;CMAKE_INTDIR="Release";vtkCommonCore_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;VTK_IN_VTK;CMAKE_INTDIR=\"Release\";vtkCommonCore_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\ogs\bb\External\vtk\src\vtk\ThirdParty\utf8\source;D:\ogs\bb\External\vtk\src\vtk-build\Common\DataModel;D:\ogs\bb\External\vtk\src\vtk-build\Utilities\KWSys;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys;D:\ogs\bb\External\vtk\src\vtk-build\Common\Core;D:\ogs\bb\External\vtk\src\vtk\Common\Core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\ogs\bb\External\vtk\src\vtk\ThirdParty\utf8\source;D:\ogs\bb\External\vtk\src\vtk-build\Common\DataModel;D:\ogs\bb\External\vtk\src\vtk-build\Utilities\KWSys;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys;D:\ogs\bb\External\vtk\src\vtk-build\Common\Core;D:\ogs\bb\External\vtk\src\vtk\Common\Core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\lib\Release\vtksys-6.3.lib;ws2_32.lib;Psapi.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/ogs/bb/External/vtk/src/vtk-build/lib/Release/vtkCommonCore-6.3.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/ogs/bb/External/vtk/src/vtk-build/bin/Release/vtkCommonCore-6.3.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\ogs\bb\External\vtk\src\vtk\ThirdParty\utf8\source;D:\ogs\bb\External\vtk\src\vtk-build\Common\DataModel;D:\ogs\bb\External\vtk\src\vtk-build\Utilities\KWSys;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys;D:\ogs\bb\External\vtk\src\vtk-build\Common\Core;D:\ogs\bb\External\vtk\src\vtk\Common\Core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;VTK_IN_VTK;CMAKE_INTDIR="MinSizeRel";vtkCommonCore_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;VTK_IN_VTK;CMAKE_INTDIR=\"MinSizeRel\";vtkCommonCore_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\ogs\bb\External\vtk\src\vtk\ThirdParty\utf8\source;D:\ogs\bb\External\vtk\src\vtk-build\Common\DataModel;D:\ogs\bb\External\vtk\src\vtk-build\Utilities\KWSys;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys;D:\ogs\bb\External\vtk\src\vtk-build\Common\Core;D:\ogs\bb\External\vtk\src\vtk\Common\Core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\ogs\bb\External\vtk\src\vtk\ThirdParty\utf8\source;D:\ogs\bb\External\vtk\src\vtk-build\Common\DataModel;D:\ogs\bb\External\vtk\src\vtk-build\Utilities\KWSys;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys;D:\ogs\bb\External\vtk\src\vtk-build\Common\Core;D:\ogs\bb\External\vtk\src\vtk\Common\Core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\lib\MinSizeRel\vtksys-6.3.lib;ws2_32.lib;Psapi.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/ogs/bb/External/vtk/src/vtk-build/lib/MinSizeRel/vtkCommonCore-6.3.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/ogs/bb/External/vtk/src/vtk-build/bin/MinSizeRel/vtkCommonCore-6.3.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\ogs\bb\External\vtk\src\vtk\ThirdParty\utf8\source;D:\ogs\bb\External\vtk\src\vtk-build\Common\DataModel;D:\ogs\bb\External\vtk\src\vtk-build\Utilities\KWSys;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys;D:\ogs\bb\External\vtk\src\vtk-build\Common\Core;D:\ogs\bb\External\vtk\src\vtk\Common\Core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;VTK_IN_VTK;CMAKE_INTDIR="RelWithDebInfo";vtkCommonCore_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;VTK_IN_VTK;CMAKE_INTDIR=\"RelWithDebInfo\";vtkCommonCore_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\ogs\bb\External\vtk\src\vtk\ThirdParty\utf8\source;D:\ogs\bb\External\vtk\src\vtk-build\Common\DataModel;D:\ogs\bb\External\vtk\src\vtk-build\Utilities\KWSys;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys;D:\ogs\bb\External\vtk\src\vtk-build\Common\Core;D:\ogs\bb\External\vtk\src\vtk\Common\Core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\ogs\bb\External\vtk\src\vtk\ThirdParty\utf8\source;D:\ogs\bb\External\vtk\src\vtk-build\Common\DataModel;D:\ogs\bb\External\vtk\src\vtk-build\Utilities\KWSys;D:\ogs\bb\External\vtk\src\vtk\Utilities\KWSys;D:\ogs\bb\External\vtk\src\vtk-build\Common\Core;D:\ogs\bb\External\vtk\src\vtk\Common\Core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\lib\RelWithDebInfo\vtksys-6.3.lib;ws2_32.lib;Psapi.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/ogs/bb/External/vtk/src/vtk-build/lib/RelWithDebInfo/vtkCommonCore-6.3.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/ogs/bb/External/vtk/src/vtk-build/bin/RelWithDebInfo/vtkCommonCore-6.3.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule D:/ogs/bb/External/vtk/src/vtk/Common/Core/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\CMake\bin\cmake.exe -HD:/ogs/bb/External/vtk/src/vtk -BD:/ogs/bb/External/vtk/src/vtk-build --check-stamp-file D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/ogs/bb/External/vtk/src/vtk/Common/Core/CMakeLists.txt;D:\ogs\bb\External\vtk\src\vtk\Common\Core\CMakeLists.txt;D:\ogs\bb\External\vtk\src\vtk\Common\Core\SMP\Sequential\vtkAtomic.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\SMP\Sequential\vtkSMPToolsInternal.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\SMP\Sequential\vtkSMPThreadLocal.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkUnicodeString.cmake.in;C:\CMake\share\cmake-3.4\Modules\CheckSymbolExists.cmake;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkVersionMacros.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkConfigure.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkToolkits.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.cxx.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.cxx.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.cxx.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.cxx.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.cxx.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.cxx.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.cxx.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.cxx.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.cxx.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.cxx.in;D:\ogs\bb\External\vtk\src\vtk\CMake\CheckCXXExpressionCompiles.cmake;C:\CMake\share\cmake-3.4\Modules\CheckCXXSourceCompiles.cmake;C:\CMake\share\cmake-3.4\Modules\CheckIncludeFile.cmake;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkMathConfigure.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkFloatingPointExceptionsConfigure.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\module.cmake;D:\ogs\bb\External\vtk\src\vtk-build\lib\cmake\vtk-6.3\Modules\vtksys.cmake;D:\ogs\bb\External\vtk\src\vtk\CMake\exportheader.cmake.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\module.cmake;D:\ogs\bb\External\vtk\src\vtk\CMake\vtkModuleInfo.cmake.in;D:\ogs\bb\External\vtk\src\vtk\CMake\vtkModuleInfo.cmake.in;D:\ogs\bb\External\vtk\src\vtk\CMake\vtkModuleHeaders.cmake.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule D:/ogs/bb/External/vtk/src/vtk/Common/Core/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\CMake\bin\cmake.exe -HD:/ogs/bb/External/vtk/src/vtk -BD:/ogs/bb/External/vtk/src/vtk-build --check-stamp-file D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/ogs/bb/External/vtk/src/vtk/Common/Core/CMakeLists.txt;D:\ogs\bb\External\vtk\src\vtk\Common\Core\CMakeLists.txt;D:\ogs\bb\External\vtk\src\vtk\Common\Core\SMP\Sequential\vtkAtomic.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\SMP\Sequential\vtkSMPToolsInternal.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\SMP\Sequential\vtkSMPThreadLocal.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkUnicodeString.cmake.in;C:\CMake\share\cmake-3.4\Modules\CheckSymbolExists.cmake;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkVersionMacros.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkConfigure.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkToolkits.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.cxx.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.cxx.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.cxx.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.cxx.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.cxx.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.cxx.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.cxx.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.cxx.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.cxx.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.cxx.in;D:\ogs\bb\External\vtk\src\vtk\CMake\CheckCXXExpressionCompiles.cmake;C:\CMake\share\cmake-3.4\Modules\CheckCXXSourceCompiles.cmake;C:\CMake\share\cmake-3.4\Modules\CheckIncludeFile.cmake;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkMathConfigure.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkFloatingPointExceptionsConfigure.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\module.cmake;D:\ogs\bb\External\vtk\src\vtk-build\lib\cmake\vtk-6.3\Modules\vtksys.cmake;D:\ogs\bb\External\vtk\src\vtk\CMake\exportheader.cmake.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\module.cmake;D:\ogs\bb\External\vtk\src\vtk\CMake\vtkModuleInfo.cmake.in;D:\ogs\bb\External\vtk\src\vtk\CMake\vtkModuleInfo.cmake.in;D:\ogs\bb\External\vtk\src\vtk\CMake\vtkModuleHeaders.cmake.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule D:/ogs/bb/External/vtk/src/vtk/Common/Core/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\CMake\bin\cmake.exe -HD:/ogs/bb/External/vtk/src/vtk -BD:/ogs/bb/External/vtk/src/vtk-build --check-stamp-file D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/ogs/bb/External/vtk/src/vtk/Common/Core/CMakeLists.txt;D:\ogs\bb\External\vtk\src\vtk\Common\Core\CMakeLists.txt;D:\ogs\bb\External\vtk\src\vtk\Common\Core\SMP\Sequential\vtkAtomic.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\SMP\Sequential\vtkSMPToolsInternal.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\SMP\Sequential\vtkSMPThreadLocal.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkUnicodeString.cmake.in;C:\CMake\share\cmake-3.4\Modules\CheckSymbolExists.cmake;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkVersionMacros.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkConfigure.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkToolkits.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.cxx.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.cxx.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.cxx.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.cxx.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.cxx.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.cxx.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.cxx.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.cxx.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.cxx.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.cxx.in;D:\ogs\bb\External\vtk\src\vtk\CMake\CheckCXXExpressionCompiles.cmake;C:\CMake\share\cmake-3.4\Modules\CheckCXXSourceCompiles.cmake;C:\CMake\share\cmake-3.4\Modules\CheckIncludeFile.cmake;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkMathConfigure.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkFloatingPointExceptionsConfigure.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\module.cmake;D:\ogs\bb\External\vtk\src\vtk-build\lib\cmake\vtk-6.3\Modules\vtksys.cmake;D:\ogs\bb\External\vtk\src\vtk\CMake\exportheader.cmake.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\module.cmake;D:\ogs\bb\External\vtk\src\vtk\CMake\vtkModuleInfo.cmake.in;D:\ogs\bb\External\vtk\src\vtk\CMake\vtkModuleInfo.cmake.in;D:\ogs\bb\External\vtk\src\vtk\CMake\vtkModuleHeaders.cmake.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule D:/ogs/bb/External/vtk/src/vtk/Common/Core/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\CMake\bin\cmake.exe -HD:/ogs/bb/External/vtk/src/vtk -BD:/ogs/bb/External/vtk/src/vtk-build --check-stamp-file D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/ogs/bb/External/vtk/src/vtk/Common/Core/CMakeLists.txt;D:\ogs\bb\External\vtk\src\vtk\Common\Core\CMakeLists.txt;D:\ogs\bb\External\vtk\src\vtk\Common\Core\SMP\Sequential\vtkAtomic.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\SMP\Sequential\vtkSMPToolsInternal.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\SMP\Sequential\vtkSMPThreadLocal.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkUnicodeString.cmake.in;C:\CMake\share\cmake-3.4\Modules\CheckSymbolExists.cmake;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkVersionMacros.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkConfigure.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkToolkits.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.cxx.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.cxx.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.cxx.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.cxx.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.cxx.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.cxx.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.cxx.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.cxx.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.cxx.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.cxx.in;D:\ogs\bb\External\vtk\src\vtk\CMake\CheckCXXExpressionCompiles.cmake;C:\CMake\share\cmake-3.4\Modules\CheckCXXSourceCompiles.cmake;C:\CMake\share\cmake-3.4\Modules\CheckIncludeFile.cmake;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkMathConfigure.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkFloatingPointExceptionsConfigure.h.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\module.cmake;D:\ogs\bb\External\vtk\src\vtk-build\lib\cmake\vtk-6.3\Modules\vtksys.cmake;D:\ogs\bb\External\vtk\src\vtk\CMake\exportheader.cmake.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\module.cmake;D:\ogs\bb\External\vtk\src\vtk\CMake\vtkModuleInfo.cmake.in;D:\ogs\bb\External\vtk\src\vtk\CMake\vtkModuleInfo.cmake.in;D:\ogs\bb\External\vtk\src\vtk\CMake\vtkModuleHeaders.cmake.in;D:\ogs\bb\External\vtk\src\vtk\Common\Core\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\ogs\bb\External\vtk\src\vtk-build\CMakeFiles\a075b35162ee92bbcb2aad169f34aa1f\vtkUnicodeCaseFoldData.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating vtkUnicodeCaseFoldData.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\CMake\bin\cmake.exe -P D:/ogs/bb/External/vtk/src/vtk-build/Common/Core/vtkUnicodeString.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/ogs/bb/External/vtk/src/vtk-build/CMakeFiles/a075b35162ee92bbcb2aad169f34aa1f/vtkUnicodeCaseFoldData.h.rule;D:\ogs\bb\External\vtk\src\vtk\Common\Core\CaseFolding.txt;D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\vtkUnicodeString.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\vtkUnicodeCaseFoldData.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating vtkUnicodeCaseFoldData.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\CMake\bin\cmake.exe -P D:/ogs/bb/External/vtk/src/vtk-build/Common/Core/vtkUnicodeString.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/ogs/bb/External/vtk/src/vtk-build/CMakeFiles/a075b35162ee92bbcb2aad169f34aa1f/vtkUnicodeCaseFoldData.h.rule;D:\ogs\bb\External\vtk\src\vtk\Common\Core\CaseFolding.txt;D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\vtkUnicodeString.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\vtkUnicodeCaseFoldData.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating vtkUnicodeCaseFoldData.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\CMake\bin\cmake.exe -P D:/ogs/bb/External/vtk/src/vtk-build/Common/Core/vtkUnicodeString.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/ogs/bb/External/vtk/src/vtk-build/CMakeFiles/a075b35162ee92bbcb2aad169f34aa1f/vtkUnicodeCaseFoldData.h.rule;D:\ogs\bb\External\vtk\src\vtk\Common\Core\CaseFolding.txt;D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\vtkUnicodeString.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\vtkUnicodeCaseFoldData.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating vtkUnicodeCaseFoldData.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\CMake\bin\cmake.exe -P D:/ogs/bb/External/vtk/src/vtk-build/Common/Core/vtkUnicodeString.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/ogs/bb/External/vtk/src/vtk-build/CMakeFiles/a075b35162ee92bbcb2aad169f34aa1f/vtkUnicodeCaseFoldData.h.rule;D:\ogs\bb\External\vtk\src\vtk\Common\Core\CaseFolding.txt;D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\vtkUnicodeString.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\vtkUnicodeCaseFoldData.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkAngularPeriodicDataArray.txx" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkMappedDataArray.txx" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkPeriodicDataArray.txx" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedDataArray.txx" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkDataArrayTemplate.txx" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkDenseArray.txx" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkSparseArray.txx" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.txx" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypeTemplate.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkType.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkSystemIncludes.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\vtkAtomic.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\vtkSMPToolsInternal.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\vtkSMPThreadLocal.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkSMPTools.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkSMPThreadLocalObject.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\vtkConfigure.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\vtkMathConfigure.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\vtkVersionMacros.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkABI.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkAngularPeriodicDataArray.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkArrayInterpolate.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkArrayInterpolate.txx" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkArrayIteratorIncludes.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkArrayIteratorTemplate.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkArrayIteratorTemplate.txx" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkArrayIteratorTemplateImplicit.txx" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkArrayPrint.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkArrayPrint.txx" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkAtomicTypeConcepts.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkAtomicTypes.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkAutoInit.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkDataArrayIteratorMacro.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkDataArrayTemplateImplicit.txx" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkIOStreamFwd.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationInternals.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkMappedDataArray.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkMathUtilities.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkNew.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkPeriodicDataArray.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkSetGet.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkSmartPointer.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTemplateAliasMacro.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypeTraits.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedDataArray.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedDataArrayIterator.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkVariantCast.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkVariantCreate.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkVariantExtract.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkVariantInlineOperators.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkWeakPointer.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkWin32Header.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkWindows.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\vtkToolkits.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkAbstractArray.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkAnimationCue.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkArrayCoordinates.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkArray.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkArrayExtents.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkArrayExtentsList.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkArrayIterator.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkArrayRange.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkArraySort.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkArrayWeights.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkBitArray.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkBitArrayIterator.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkBoxMuellerRandomSequence.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkBreakPoint.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkByteSwap.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkCallbackCommand.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkCharArray.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkCollection.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkCollectionIterator.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkCommand.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkCommonInformationKeyManager.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkConditionVariable.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkCriticalSection.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkDataArrayCollection.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkDataArrayCollectionIterator.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkDataArray.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkDataArraySelection.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkDebugLeaks.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkDebugLeaksManager.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkDoubleArray.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkDynamicLoader.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkEventForwarderCommand.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkFileOutputWindow.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkFloatArray.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkFloatingPointExceptions.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkGarbageCollector.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkGarbageCollectorManager.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkGaussianRandomSequence.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkIdListCollection.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkIdList.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkIdTypeArray.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkIndent.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformation.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationDataObjectKey.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationDoubleKey.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationDoubleVectorKey.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationIdTypeKey.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationInformationKey.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationInformationVectorKey.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationIntegerKey.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationIntegerPointerKey.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationIntegerVectorKey.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationIterator.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationKey.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationKeyVectorKey.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationObjectBaseKey.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationObjectBaseVectorKey.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationRequestKey.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationStringKey.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationStringVectorKey.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationUnsignedLongKey.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationVariantKey.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationVariantVectorKey.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationVector.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInstantiator.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkIntArray.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkIOStream.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkLargeInteger.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkLongArray.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkLookupTable.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkMath.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkMinimalStandardRandomSequence.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkMultiThreader.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkMutexLock.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkObjectBase.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkObject.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkObjectFactoryCollection.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkObjectFactory.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkOldStyleCallbackCommand.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkOStreamWrapper.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkOStrStreamWrapper.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkOutputWindow.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkOverrideInformationCollection.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkOverrideInformation.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkPoints2D.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkPoints.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkPriorityQueue.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkRandomSequence.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkReferenceCount.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkScalarsToColors.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkShortArray.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkSignedCharArray.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkSimpleCriticalSection.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkSmartPointerBase.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkSortDataArray.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkStdString.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkStringArray.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTimePointUtility.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTimeStamp.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkUnicodeStringArray.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkUnicodeString.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkUnsignedCharArray.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkUnsignedIntArray.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkUnsignedLongArray.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkUnsignedShortArray.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkVariantArray.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkVariant.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkVersion.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkVoidArray.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkWeakPointerBase.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkWindow.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkXMLFileOutputWindow.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkDataArrayTemplate.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkDataArrayTemplateHelper.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkDenseArray.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkSparseArray.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkWin32OutputWindow.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkWin32ProcessOutputWindow.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkLongLongArray.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkUnsignedLongLongArray.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\vtkTypeInt8Array.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\vtkTypeInt16Array.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\vtkTypeInt32Array.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\vtkTypeInt64Array.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\vtkTypeUInt8Array.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\vtkTypeUInt16Array.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\vtkTypeUInt32Array.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\vtkTypeUInt64Array.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\vtkTypeFloat32Array.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\vtkTypeFloat64Array.h" />
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\vtkCommonCoreModule.h" />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkAbstractArray.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkAnimationCue.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkArrayCoordinates.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkArray.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkArrayExtents.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkArrayExtentsList.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkArrayIterator.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkArrayRange.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkArraySort.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkArrayWeights.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkBitArray.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkBitArrayIterator.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkBoxMuellerRandomSequence.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkBreakPoint.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkByteSwap.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkCallbackCommand.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkCharArray.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkCollection.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkCollectionIterator.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkCommand.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkCommonInformationKeyManager.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkConditionVariable.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkCriticalSection.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkDataArrayCollection.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkDataArrayCollectionIterator.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkDataArray.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkDataArraySelection.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkDebugLeaks.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkDebugLeaksManager.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkDoubleArray.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkDynamicLoader.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkEventForwarderCommand.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkFileOutputWindow.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkFloatArray.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkFloatingPointExceptions.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkGarbageCollector.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkGarbageCollectorManager.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkGaussianRandomSequence.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkIdListCollection.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkIdList.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkIdTypeArray.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkIndent.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformation.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationDataObjectKey.cxx" >
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">vtkCommonDataModel_ENABLED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">vtkCommonDataModel_ENABLED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">vtkCommonDataModel_ENABLED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">vtkCommonDataModel_ENABLED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationDoubleKey.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationDoubleVectorKey.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationIdTypeKey.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationInformationKey.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationInformationVectorKey.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationIntegerKey.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationIntegerPointerKey.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationIntegerVectorKey.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationIterator.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationKey.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationKeyVectorKey.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationObjectBaseKey.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationObjectBaseVectorKey.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationRequestKey.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationStringKey.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationStringVectorKey.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationUnsignedLongKey.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationVariantKey.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationVariantVectorKey.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationVector.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInstantiator.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkIntArray.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkIOStream.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkLargeInteger.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkLongArray.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkLookupTable.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkMath.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkMinimalStandardRandomSequence.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkMultiThreader.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkMutexLock.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkObjectBase.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkObject.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkObjectFactoryCollection.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkObjectFactory.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkOldStyleCallbackCommand.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkOStreamWrapper.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkOStrStreamWrapper.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkOutputWindow.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkOverrideInformationCollection.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkOverrideInformation.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkPoints2D.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkPoints.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkPriorityQueue.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkRandomSequence.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkReferenceCount.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkScalarsToColors.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkShortArray.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkSignedCharArray.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkSimpleCriticalSection.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkSmartPointerBase.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkSortDataArray.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkStdString.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkStringArray.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTimePointUtility.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTimeStamp.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkUnicodeStringArray.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkUnicodeString.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkUnsignedCharArray.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkUnsignedIntArray.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkUnsignedLongArray.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkUnsignedShortArray.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkVariantArray.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkVariant.cxx" >
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">VTK_VARIANT_IMPL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">VTK_VARIANT_IMPL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">VTK_VARIANT_IMPL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">VTK_VARIANT_IMPL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkVersion.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkVoidArray.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkWeakPointerBase.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkWindow.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkXMLFileOutputWindow.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkDataArrayTemplateHelper.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\SMP\Sequential\vtkSMPTools.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\SMP\Sequential\vtkAtomic.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkWin32OutputWindow.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkWin32OutputWindowProcessEncoded.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkWin32ProcessOutputWindow.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkLongLongArray.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkUnsignedLongLongArray.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\vtkTypeInt8Array.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\vtkTypeInt16Array.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\vtkTypeInt32Array.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\vtkTypeInt64Array.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\vtkTypeUInt8Array.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\vtkTypeUInt16Array.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\vtkTypeUInt32Array.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\vtkTypeUInt64Array.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\vtkTypeFloat32Array.cxx"  />
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\vtkTypeFloat64Array.cxx"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/ogs/bb/External/vtk/src/vtk-build/ZERO_CHECK.vcxproj">
+      <Project>9768661C-653F-37EA-AE11-2D8068F19408</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/ogs/bb/External/vtk/src/vtk-build/Utilities/KWSys/vtksys/vtksys.vcxproj">
+      <Project>F38DF363-4368-3FA5-9AC2-61CF6C060F52</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

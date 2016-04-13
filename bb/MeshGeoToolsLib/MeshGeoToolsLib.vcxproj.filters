@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\ogs\MeshGeoToolsLib\AppendLinesAlongPolyline.cpp">
+      <Filter>MeshGeoToolsLib</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\MeshGeoToolsLib\BoundaryElementsAlongPolyline.cpp">
+      <Filter>MeshGeoToolsLib</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\MeshGeoToolsLib\BoundaryElementsAtPoint.cpp">
+      <Filter>MeshGeoToolsLib</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\MeshGeoToolsLib\BoundaryElementsOnSurface.cpp">
+      <Filter>MeshGeoToolsLib</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\MeshGeoToolsLib\BoundaryElementsSearcher.cpp">
+      <Filter>MeshGeoToolsLib</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\MeshGeoToolsLib\GeoMapper.cpp">
+      <Filter>MeshGeoToolsLib</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\MeshGeoToolsLib\HeuristicSearchLength.cpp">
+      <Filter>MeshGeoToolsLib</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\MeshGeoToolsLib\MeshNodesAlongPolyline.cpp">
+      <Filter>MeshGeoToolsLib</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\MeshGeoToolsLib\MeshNodesAlongSurface.cpp">
+      <Filter>MeshGeoToolsLib</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\MeshGeoToolsLib\MeshNodeSearcher.cpp">
+      <Filter>MeshGeoToolsLib</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\MeshGeoToolsLib\MeshNodesOnPoint.cpp">
+      <Filter>MeshGeoToolsLib</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\ogs\MeshGeoToolsLib\AppendLinesAlongPolyline.h">
+      <Filter>MeshGeoToolsLib</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshGeoToolsLib\BoundaryElementsAlongPolyline.h">
+      <Filter>MeshGeoToolsLib</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshGeoToolsLib\BoundaryElementsAtPoint.h">
+      <Filter>MeshGeoToolsLib</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshGeoToolsLib\BoundaryElementsOnSurface.h">
+      <Filter>MeshGeoToolsLib</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshGeoToolsLib\BoundaryElementsSearcher.h">
+      <Filter>MeshGeoToolsLib</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshGeoToolsLib\GeoMapper.h">
+      <Filter>MeshGeoToolsLib</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshGeoToolsLib\HeuristicSearchLength.h">
+      <Filter>MeshGeoToolsLib</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshGeoToolsLib\MeshNodesAlongPolyline.h">
+      <Filter>MeshGeoToolsLib</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshGeoToolsLib\MeshNodesAlongSurface.h">
+      <Filter>MeshGeoToolsLib</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshGeoToolsLib\MeshNodeSearcher.h">
+      <Filter>MeshGeoToolsLib</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshGeoToolsLib\MeshNodesOnPoint.h">
+      <Filter>MeshGeoToolsLib</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshGeoToolsLib\SearchLength.h">
+      <Filter>MeshGeoToolsLib</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\ogs\MeshGeoToolsLib\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="MeshGeoToolsLib">
+      <UniqueIdentifier>{1CFEA0E0-8CEF-396B-9C50-413E3FCABE07}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,27 @@
+
+{
+	"sources" : 
+	[
+		
+		{
+			"file" : "D:/ogs/bb/External/vtk/src/vtk/ThirdParty/expat/vtkexpat/xmlparse.c"
+		},
+		
+		{
+			"file" : "D:/ogs/bb/External/vtk/src/vtk/ThirdParty/expat/vtkexpat/xmltok.c"
+		},
+		
+		{
+			"file" : "D:/ogs/bb/External/vtk/src/vtk/ThirdParty/expat/vtkexpat/xmlrole.c"
+		},
+		
+		{
+			"file" : "D:/ogs/bb/External/vtk/src/vtk/ThirdParty/expat/vtkexpat/CMakeLists.txt"
+		}
+	],
+	"target" : 
+	{
+		"labels" : [ "vtkexpat" ],
+		"name" : "vtkexpat"
+	}
+}

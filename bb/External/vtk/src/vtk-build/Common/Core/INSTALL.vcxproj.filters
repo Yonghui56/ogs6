@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\ogs\bb\External\vtk\src\vtk-build\CMakeFiles\2a207dba5e08045a36043f119991effe\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{40C0FEE0-F00A-30C1-84E6-63F07C28C356}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

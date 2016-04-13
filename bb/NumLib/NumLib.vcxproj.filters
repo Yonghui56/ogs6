@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\ogs\NumLib\Fem\ShapeFunction\ShapeStaticConsts.cpp">
+      <Filter>NumLib\Fem\ShapeFunction</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\NumLib\TimeStepping\Algorithms\FixedTimeStepping.cpp">
+      <Filter>NumLib\TimeStepping\Algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\NumLib\TimeStepping\Algorithms\IterationNumberBasedAdaptiveTimeStepping.cpp">
+      <Filter>NumLib\TimeStepping\Algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\NumLib\Function\LinearInterpolationAlongPolyline.cpp">
+      <Filter>NumLib\Function</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\NumLib\Function\LinearInterpolationOnSurface.cpp">
+      <Filter>NumLib\Function</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\NumLib\Distribution\Distribution.cpp">
+      <Filter>NumLib\Distribution</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\ogs\NumLib\Fem\ShapeMatrixPolicy.h">
+      <Filter>NumLib\Fem</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\NumLib\Fem\CoordinatesMapping\NaturalCoordinatesMapping-impl.h">
+      <Filter>NumLib\Fem\CoordinatesMapping</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\NumLib\Fem\CoordinatesMapping\NaturalCoordinatesMapping.h">
+      <Filter>NumLib\Fem\CoordinatesMapping</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\NumLib\Fem\CoordinatesMapping\ShapeMatrices-impl.h">
+      <Filter>NumLib\Fem\CoordinatesMapping</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\NumLib\Fem\CoordinatesMapping\ShapeMatrices.h">
+      <Filter>NumLib\Fem\CoordinatesMapping</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\NumLib\Fem\FiniteElement\C0IsoparametricElements.h">
+      <Filter>NumLib\Fem\FiniteElement</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\NumLib\Fem\FiniteElement\TemplateIsoparametric.h">
+      <Filter>NumLib\Fem\FiniteElement</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\NumLib\Fem\Integration\GaussIntegrationPolicy.h">
+      <Filter>NumLib\Fem\Integration</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\NumLib\Fem\Integration\IntegrationGaussPrism.h">
+      <Filter>NumLib\Fem\Integration</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\NumLib\Fem\Integration\IntegrationGaussPyramid.h">
+      <Filter>NumLib\Fem\Integration</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\NumLib\Fem\Integration\IntegrationGaussRegular-impl.h">
+      <Filter>NumLib\Fem\Integration</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\NumLib\Fem\Integration\IntegrationGaussRegular.h">
+      <Filter>NumLib\Fem\Integration</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\NumLib\Fem\Integration\IntegrationGaussTet.h">
+      <Filter>NumLib\Fem\Integration</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\NumLib\Fem\Integration\IntegrationGaussTri.h">
+      <Filter>NumLib\Fem\Integration</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\NumLib\Fem\Integration\IntegrationPoint.h">
+      <Filter>NumLib\Fem\Integration</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\NumLib\Fem\ShapeFunction\ShapeHex20-impl.h">
+      <Filter>NumLib\Fem\ShapeFunction</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\NumLib\Fem\ShapeFunction\ShapeHex20.h">
+      <Filter>NumLib\Fem\ShapeFunction</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\NumLib\Fem\ShapeFunction\ShapeHex8-impl.h">
+      <Filter>NumLib\Fem\ShapeFunction</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\NumLib\Fem\ShapeFunction\ShapeHex8.h">
+      <Filter>NumLib\Fem\ShapeFunction</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\NumLib\Fem\ShapeFunction\ShapeLine2-impl.h">
+      <Filter>NumLib\Fem\ShapeFunction</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\NumLib\Fem\ShapeFunction\ShapeLine2.h">
+      <Filter>NumLib\Fem\ShapeFunction</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\NumLib\Fem\ShapeFunction\ShapeLine3-impl.h">
+      <Filter>NumLib\Fem\ShapeFunction</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\NumLib\Fem\ShapeFunction\ShapeLine3.h">
+      <Filter>NumLib\Fem\ShapeFunction</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\NumLib\Fem\ShapeFunction\ShapePoint1-impl.h">
+      <Filter>NumLib\Fem\ShapeFunction</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\NumLib\Fem\ShapeFunction\ShapePoint1.h">
+      <Filter>NumLib\Fem\ShapeFunction</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\NumLib\Fem\ShapeFunction\ShapePrism15-impl.h">
+      <Filter>NumLib\Fem\ShapeFunction</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\NumLib\Fem\ShapeFunction\ShapePrism15.h">
+      <Filter>NumLib\Fem\ShapeFunction</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\NumLib\Fem\ShapeFunction\ShapePrism6-impl.h">
+      <Filter>NumLib\Fem\ShapeFunction</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\NumLib\Fem\ShapeFunction\ShapePrism6.h">
+      <Filter>NumLib\Fem\ShapeFunction</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\NumLib\Fem\ShapeFunction\ShapePyra13-impl.h">
+      <Filter>NumLib\Fem\ShapeFunction</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\NumLib\Fem\ShapeFunction\ShapePyra13.h">
+      <Filter>NumLib\Fem\ShapeFunction</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\NumLib\Fem\ShapeFunction\ShapePyra5-impl.h">
+      <Filter>NumLib\Fem\ShapeFunction</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\NumLib\Fem\ShapeFunction\ShapePyra5.h">
+      <Filter>NumLib\Fem\ShapeFunction</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\NumLib\Fem\ShapeFunction\ShapeQuad4-impl.h">
+      <Filter>NumLib\Fem\ShapeFunction</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\NumLib\Fem\ShapeFunction\ShapeQuad4.h">
+      <Filter>NumLib\Fem\ShapeFunction</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\NumLib\Fem\ShapeFunction\ShapeQuad8-impl.h">
+      <Filter>NumLib\Fem\ShapeFunction</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\NumLib\Fem\ShapeFunction\ShapeQuad8.h">
+      <Filter>NumLib\Fem\ShapeFunction</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\NumLib\Fem\ShapeFunction\ShapeQuad9-impl.h">
+      <Filter>NumLib\Fem\ShapeFunction</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\NumLib\Fem\ShapeFunction\ShapeQuad9.h">
+      <Filter>NumLib\Fem\ShapeFunction</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\NumLib\Fem\ShapeFunction\ShapeTet10-impl.h">
+      <Filter>NumLib\Fem\ShapeFunction</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\NumLib\Fem\ShapeFunction\ShapeTet10.h">
+      <Filter>NumLib\Fem\ShapeFunction</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\NumLib\Fem\ShapeFunction\ShapeTet4-impl.h">
+      <Filter>NumLib\Fem\ShapeFunction</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\NumLib\Fem\ShapeFunction\ShapeTet4.h">
+      <Filter>NumLib\Fem\ShapeFunction</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\NumLib\Fem\ShapeFunction\ShapeTri3-impl.h">
+      <Filter>NumLib\Fem\ShapeFunction</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\NumLib\Fem\ShapeFunction\ShapeTri3.h">
+      <Filter>NumLib\Fem\ShapeFunction</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\NumLib\Fem\ShapeFunction\ShapeTri6-impl.h">
+      <Filter>NumLib\Fem\ShapeFunction</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\NumLib\Fem\ShapeFunction\ShapeTri6.h">
+      <Filter>NumLib\Fem\ShapeFunction</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\NumLib\TimeStepping\TimeStep.h">
+      <Filter>NumLib\TimeStepping</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\NumLib\TimeStepping\Algorithms\FixedTimeStepping.h">
+      <Filter>NumLib\TimeStepping\Algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\NumLib\TimeStepping\Algorithms\IterationNumberBasedAdaptiveTimeStepping.h">
+      <Filter>NumLib\TimeStepping\Algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\NumLib\TimeStepping\Algorithms\ITimeStepAlgorithm.h">
+      <Filter>NumLib\TimeStepping\Algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\NumLib\Function\Interpolation.h">
+      <Filter>NumLib\Function</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\NumLib\Function\ISpatialFunction.h">
+      <Filter>NumLib\Function</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\NumLib\Function\LinearInterpolationAlongPolyline.h">
+      <Filter>NumLib\Function</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\NumLib\Function\LinearInterpolationOnSurface.h">
+      <Filter>NumLib\Function</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\NumLib\Function\SpatialFunctionLinear.h">
+      <Filter>NumLib\Function</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\NumLib\Function\TemplateSpatialFunction.h">
+      <Filter>NumLib\Function</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\NumLib\Distribution\Distribution.h">
+      <Filter>NumLib\Distribution</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\NumLib\ODESolver\EquationSystem.h">
+      <Filter>NumLib\ODESolver</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\NumLib\ODESolver\MatrixTranslator.h">
+      <Filter>NumLib\ODESolver</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\NumLib\ODESolver\NonlinearSolver-impl.h">
+      <Filter>NumLib\ODESolver</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\NumLib\ODESolver\NonlinearSolver.h">
+      <Filter>NumLib\ODESolver</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\NumLib\ODESolver\NonlinearSystem.h">
+      <Filter>NumLib\ODESolver</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\NumLib\ODESolver\ODESystem.h">
+      <Filter>NumLib\ODESolver</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\NumLib\ODESolver\TimeDiscretization.h">
+      <Filter>NumLib\ODESolver</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\NumLib\ODESolver\TimeDiscretizationBuilder.h">
+      <Filter>NumLib\ODESolver</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\NumLib\ODESolver\TimeDiscretizedODESystem.h">
+      <Filter>NumLib\ODESolver</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\NumLib\ODESolver\TimeLoopSingleODE.h">
+      <Filter>NumLib\ODESolver</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\NumLib\ODESolver\Types.h">
+      <Filter>NumLib\ODESolver</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\ogs\NumLib\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="NumLib\Fem\CoordinatesMapping">
+      <UniqueIdentifier>{31643555-3CF7-3421-A4EA-F14B141E9F4F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NumLib\Fem\FiniteElement">
+      <UniqueIdentifier>{1EAFEA15-3C7B-34A9-81C5-7224CC6BDF0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NumLib\Fem\Integration">
+      <UniqueIdentifier>{4A2E1D77-54C1-3E67-804C-AE8836F634FB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NumLib\Fem\ShapeFunction">
+      <UniqueIdentifier>{D57576E8-A8D0-3D4A-9CD8-457F2E669D82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NumLib\Fem">
+      <UniqueIdentifier>{B6CD5E21-985D-3D00-9EC2-1C9289E3D0AB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NumLib\TimeStepping">
+      <UniqueIdentifier>{1604B583-9908-3D9C-A270-7A2A1F86B5A8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NumLib\Function">
+      <UniqueIdentifier>{D937B0CA-AF75-39C4-9FA9-3AB280F46D84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NumLib\Distribution">
+      <UniqueIdentifier>{BC3754FB-5D37-3A2A-BDBE-09323BF4B7E8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NumLib\ODESolver">
+      <UniqueIdentifier>{BE8C453A-8EEB-30C7-8970-6B3C5BE55198}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NumLib">
+      <UniqueIdentifier>{632F24EF-A328-3ADA-A773-01C3BC2D8BF7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NumLib\TimeStepping\Algorithms">
+      <UniqueIdentifier>{6BE435E4-CECA-30B6-A702-D763992ECB51}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

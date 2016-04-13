@@ -1,0 +1,972 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkAbstractArray.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkAnimationCue.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkArrayCoordinates.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkArray.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkArrayExtents.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkArrayExtentsList.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkArrayIterator.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkArrayRange.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkArraySort.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkArrayWeights.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkBitArray.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkBitArrayIterator.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkBoxMuellerRandomSequence.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkBreakPoint.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkByteSwap.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkCallbackCommand.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkCharArray.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkCollection.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkCollectionIterator.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkCommand.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkCommonInformationKeyManager.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkConditionVariable.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkCriticalSection.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkDataArrayCollection.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkDataArrayCollectionIterator.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkDataArray.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkDataArraySelection.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkDebugLeaks.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkDebugLeaksManager.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkDoubleArray.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkDynamicLoader.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkEventForwarderCommand.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkFileOutputWindow.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkFloatArray.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkFloatingPointExceptions.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkGarbageCollector.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkGarbageCollectorManager.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkGaussianRandomSequence.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkIdListCollection.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkIdList.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkIdTypeArray.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkIndent.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformation.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationDataObjectKey.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationDoubleKey.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationDoubleVectorKey.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationIdTypeKey.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationInformationKey.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationInformationVectorKey.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationIntegerKey.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationIntegerPointerKey.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationIntegerVectorKey.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationIterator.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationKey.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationKeyVectorKey.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationObjectBaseKey.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationObjectBaseVectorKey.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationRequestKey.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationStringKey.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationStringVectorKey.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationUnsignedLongKey.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationVariantKey.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationVariantVectorKey.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationVector.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInstantiator.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkIntArray.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkIOStream.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkLargeInteger.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkLongArray.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkLookupTable.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkMath.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkMinimalStandardRandomSequence.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkMultiThreader.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkMutexLock.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkObjectBase.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkObject.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkObjectFactoryCollection.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkObjectFactory.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkOldStyleCallbackCommand.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkOStreamWrapper.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkOStrStreamWrapper.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkOutputWindow.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkOverrideInformationCollection.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkOverrideInformation.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkPoints2D.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkPoints.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkPriorityQueue.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkRandomSequence.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkReferenceCount.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkScalarsToColors.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkShortArray.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkSignedCharArray.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkSimpleCriticalSection.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkSmartPointerBase.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkSortDataArray.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkStdString.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkStringArray.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTimePointUtility.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTimeStamp.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkUnicodeStringArray.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkUnicodeString.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkUnsignedCharArray.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkUnsignedIntArray.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkUnsignedLongArray.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkUnsignedShortArray.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkVariantArray.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkVariant.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkVersion.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkVoidArray.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkWeakPointerBase.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkWindow.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkXMLFileOutputWindow.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkDataArrayTemplateHelper.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\SMP\Sequential\vtkSMPTools.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\SMP\Sequential\vtkAtomic.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkWin32OutputWindow.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkWin32OutputWindowProcessEncoded.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkWin32ProcessOutputWindow.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkLongLongArray.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkUnsignedLongLongArray.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\vtkTypeInt8Array.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\vtkTypeInt16Array.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\vtkTypeInt32Array.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\vtkTypeInt64Array.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\vtkTypeUInt8Array.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\vtkTypeUInt16Array.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\vtkTypeUInt32Array.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\vtkTypeUInt64Array.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\vtkTypeFloat32Array.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\vtkTypeFloat64Array.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkAngularPeriodicDataArray.txx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkMappedDataArray.txx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkPeriodicDataArray.txx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedDataArray.txx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkDataArrayTemplate.txx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkDenseArray.txx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkSparseArray.txx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.txx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypeTemplate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkType.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkSystemIncludes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\vtkAtomic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\vtkSMPToolsInternal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\vtkSMPThreadLocal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkSMPTools.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkSMPThreadLocalObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\vtkConfigure.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\vtkMathConfigure.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\vtkVersionMacros.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkABI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkAngularPeriodicDataArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkArrayInterpolate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkArrayInterpolate.txx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkArrayIteratorIncludes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkArrayIteratorTemplate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkArrayIteratorTemplate.txx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkArrayIteratorTemplateImplicit.txx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkArrayPrint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkArrayPrint.txx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkAtomicTypeConcepts.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkAtomicTypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkAutoInit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkDataArrayIteratorMacro.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkDataArrayTemplateImplicit.txx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkIOStreamFwd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationInternals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkMappedDataArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkMathUtilities.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkNew.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkPeriodicDataArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkSetGet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkSmartPointer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTemplateAliasMacro.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypeTraits.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedDataArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedDataArrayIterator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkVariantCast.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkVariantCreate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkVariantExtract.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkVariantInlineOperators.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkWeakPointer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkWin32Header.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkWindows.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\vtkToolkits.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkAbstractArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkAnimationCue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkArrayCoordinates.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkArrayExtents.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkArrayExtentsList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkArrayIterator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkArrayRange.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkArraySort.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkArrayWeights.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkBitArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkBitArrayIterator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkBoxMuellerRandomSequence.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkBreakPoint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkByteSwap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkCallbackCommand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkCharArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkCollection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkCollectionIterator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkCommand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkCommonInformationKeyManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkConditionVariable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkCriticalSection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkDataArrayCollection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkDataArrayCollectionIterator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkDataArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkDataArraySelection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkDebugLeaks.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkDebugLeaksManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkDoubleArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkDynamicLoader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkEventForwarderCommand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkFileOutputWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkFloatArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkFloatingPointExceptions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkGarbageCollector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkGarbageCollectorManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkGaussianRandomSequence.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkIdListCollection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkIdList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkIdTypeArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkIndent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationDataObjectKey.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationDoubleKey.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationDoubleVectorKey.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationIdTypeKey.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationInformationKey.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationInformationVectorKey.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationIntegerKey.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationIntegerPointerKey.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationIntegerVectorKey.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationIterator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationKey.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationKeyVectorKey.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationObjectBaseKey.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationObjectBaseVectorKey.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationRequestKey.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationStringKey.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationStringVectorKey.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationUnsignedLongKey.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationVariantKey.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationVariantVectorKey.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInformationVector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkInstantiator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkIntArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkIOStream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkLargeInteger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkLongArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkLookupTable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkMath.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkMinimalStandardRandomSequence.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkMultiThreader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkMutexLock.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkObjectBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkObjectFactoryCollection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkObjectFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkOldStyleCallbackCommand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkOStreamWrapper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkOStrStreamWrapper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkOutputWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkOverrideInformationCollection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkOverrideInformation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkPoints2D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkPoints.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkPriorityQueue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkRandomSequence.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkReferenceCount.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkScalarsToColors.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkShortArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkSignedCharArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkSimpleCriticalSection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkSmartPointerBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkSortDataArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkStdString.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkStringArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTimePointUtility.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTimeStamp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkUnicodeStringArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkUnicodeString.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkUnsignedCharArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkUnsignedIntArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkUnsignedLongArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkUnsignedShortArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkVariantArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkVariant.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkVersion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkVoidArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkWeakPointerBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkXMLFileOutputWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkDataArrayTemplate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkDataArrayTemplateHelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkDenseArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkSparseArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkTypedArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkWin32OutputWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkWin32ProcessOutputWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkLongLongArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\vtkUnsignedLongLongArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\vtkTypeInt8Array.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\vtkTypeInt16Array.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\vtkTypeInt32Array.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\vtkTypeInt64Array.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\vtkTypeUInt8Array.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\vtkTypeUInt16Array.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\vtkTypeUInt32Array.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\vtkTypeUInt64Array.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\vtkTypeFloat32Array.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\vtkTypeFloat64Array.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\bb\External\vtk\src\vtk-build\Common\Core\vtkCommonCoreModule.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\ogs\bb\External\vtk\src\vtk\Common\Core\CMakeLists.txt" />
+    <CustomBuild Include="D:\ogs\bb\External\vtk\src\vtk-build\CMakeFiles\a075b35162ee92bbcb2aad169f34aa1f\vtkUnicodeCaseFoldData.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{E1451A22-0974-3995-9080-C779BFA1C7DF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{5EEAB83B-6272-3755-8CC6-A40A48DEC7C3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{40C0FEE0-F00A-30C1-84E6-63F07C28C356}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

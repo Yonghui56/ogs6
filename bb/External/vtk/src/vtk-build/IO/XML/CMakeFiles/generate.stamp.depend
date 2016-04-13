@@ -1,0 +1,21 @@
+# CMake generation dependency list for this directory.
+D:/ogs/bb/External/vtk/src/vtk/IO/XML/CMakeLists.txt
+D:/ogs/bb/External/vtk/src/vtk/IO/XML/module.cmake
+D:/ogs/bb/External/vtk/src/vtk-build/lib/cmake/vtk-6.3/Modules/vtkIOGeometry.cmake
+D:/ogs/bb/External/vtk/src/vtk-build/lib/cmake/vtk-6.3/Modules/vtkCommonDataModel.cmake
+D:/ogs/bb/External/vtk/src/vtk-build/lib/cmake/vtk-6.3/Modules/vtkCommonMath.cmake
+D:/ogs/bb/External/vtk/src/vtk-build/lib/cmake/vtk-6.3/Modules/vtkCommonCore.cmake
+D:/ogs/bb/External/vtk/src/vtk-build/lib/cmake/vtk-6.3/Modules/vtksys.cmake
+D:/ogs/bb/External/vtk/src/vtk-build/lib/cmake/vtk-6.3/Modules/vtkCommonMisc.cmake
+D:/ogs/bb/External/vtk/src/vtk-build/lib/cmake/vtk-6.3/Modules/vtkCommonSystem.cmake
+D:/ogs/bb/External/vtk/src/vtk-build/lib/cmake/vtk-6.3/Modules/vtkCommonTransforms.cmake
+D:/ogs/bb/External/vtk/src/vtk-build/lib/cmake/vtk-6.3/Modules/vtkIOCore.cmake
+D:/ogs/bb/External/vtk/src/vtk-build/lib/cmake/vtk-6.3/Modules/vtkCommonExecutionModel.cmake
+D:/ogs/bb/External/vtk/src/vtk-build/lib/cmake/vtk-6.3/Modules/vtkzlib.cmake
+D:/ogs/bb/External/vtk/src/vtk-build/lib/cmake/vtk-6.3/Modules/vtkIOXMLParser.cmake
+D:/ogs/bb/External/vtk/src/vtk-build/lib/cmake/vtk-6.3/Modules/vtkexpat.cmake
+D:/ogs/bb/External/vtk/src/vtk/CMake/exportheader.cmake.in
+D:/ogs/bb/External/vtk/src/vtk/IO/XML/module.cmake
+D:/ogs/bb/External/vtk/src/vtk/CMake/vtkModuleInfo.cmake.in
+D:/ogs/bb/External/vtk/src/vtk/CMake/vtkModuleInfo.cmake.in
+D:/ogs/bb/External/vtk/src/vtk/CMake/vtkModuleHeaders.cmake.in

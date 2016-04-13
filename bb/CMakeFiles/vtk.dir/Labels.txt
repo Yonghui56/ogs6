@@ -1,0 +1,14 @@
+# Target labels
+ vtk
+# Source files and their labels
+D:/ogs/bb/CMakeFiles/vtk
+D:/ogs/CMakeLists.txt
+D:/ogs/bb/CMakeFiles/2368c047e368b67918df9a202e8c5360/vtk.rule
+D:/ogs/bb/CMakeFiles/54f0d0ced548b089b5f58675f2cd635d/vtk-complete.rule
+D:/ogs/bb/CMakeFiles/f3d325460fe9d992c4728b37f949eca3/vtk-install.rule
+D:/ogs/bb/CMakeFiles/f3d325460fe9d992c4728b37f949eca3/vtk-mkdir.rule
+D:/ogs/bb/CMakeFiles/f3d325460fe9d992c4728b37f949eca3/vtk-download.rule
+D:/ogs/bb/CMakeFiles/f3d325460fe9d992c4728b37f949eca3/vtk-update.rule
+D:/ogs/bb/CMakeFiles/f3d325460fe9d992c4728b37f949eca3/vtk-patch.rule
+D:/ogs/bb/CMakeFiles/f3d325460fe9d992c4728b37f949eca3/vtk-configure.rule
+D:/ogs/bb/CMakeFiles/f3d325460fe9d992c4728b37f949eca3/vtk-build.rule

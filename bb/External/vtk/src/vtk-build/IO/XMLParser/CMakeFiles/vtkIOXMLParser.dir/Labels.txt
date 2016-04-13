@@ -1,0 +1,11 @@
+# Target labels
+ vtkIOXMLParser
+# Source files and their labels
+D:/ogs/bb/External/vtk/src/vtk/IO/XMLParser/vtkXMLDataParser.cxx
+D:/ogs/bb/External/vtk/src/vtk/IO/XMLParser/vtkXMLParser.cxx
+D:/ogs/bb/External/vtk/src/vtk/IO/XMLParser/vtkXMLUtilities.cxx
+D:/ogs/bb/External/vtk/src/vtk/IO/XMLParser/vtkXMLDataParser.h
+D:/ogs/bb/External/vtk/src/vtk/IO/XMLParser/vtkXMLParser.h
+D:/ogs/bb/External/vtk/src/vtk/IO/XMLParser/vtkXMLUtilities.h
+D:/ogs/bb/External/vtk/src/vtk-build/IO/XMLParser/vtkIOXMLParserModule.h
+D:/ogs/bb/External/vtk/src/vtk/IO/XMLParser/CMakeLists.txt

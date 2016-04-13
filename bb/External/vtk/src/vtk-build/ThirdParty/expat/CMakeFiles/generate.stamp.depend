@@ -1,0 +1,7 @@
+# CMake generation dependency list for this directory.
+D:/ogs/bb/External/vtk/src/vtk/ThirdParty/expat/CMakeLists.txt
+D:/ogs/bb/External/vtk/src/vtk/ThirdParty/expat/module.cmake
+D:/ogs/bb/External/vtk/src/vtk/ThirdParty/expat/module.cmake
+D:/ogs/bb/External/vtk/src/vtk/CMake/vtkModuleInfo.cmake.in
+D:/ogs/bb/External/vtk/src/vtk/CMake/vtkModuleInfo.cmake.in
+D:/ogs/bb/External/vtk/src/vtk/ThirdParty/expat/vtk_expat.h.in

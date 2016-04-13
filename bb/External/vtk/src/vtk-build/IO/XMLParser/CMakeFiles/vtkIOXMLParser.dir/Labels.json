@@ -1,0 +1,43 @@
+
+{
+	"sources" : 
+	[
+		
+		{
+			"file" : "D:/ogs/bb/External/vtk/src/vtk/IO/XMLParser/vtkXMLDataParser.cxx"
+		},
+		
+		{
+			"file" : "D:/ogs/bb/External/vtk/src/vtk/IO/XMLParser/vtkXMLParser.cxx"
+		},
+		
+		{
+			"file" : "D:/ogs/bb/External/vtk/src/vtk/IO/XMLParser/vtkXMLUtilities.cxx"
+		},
+		
+		{
+			"file" : "D:/ogs/bb/External/vtk/src/vtk/IO/XMLParser/vtkXMLDataParser.h"
+		},
+		
+		{
+			"file" : "D:/ogs/bb/External/vtk/src/vtk/IO/XMLParser/vtkXMLParser.h"
+		},
+		
+		{
+			"file" : "D:/ogs/bb/External/vtk/src/vtk/IO/XMLParser/vtkXMLUtilities.h"
+		},
+		
+		{
+			"file" : "D:/ogs/bb/External/vtk/src/vtk-build/IO/XMLParser/vtkIOXMLParserModule.h"
+		},
+		
+		{
+			"file" : "D:/ogs/bb/External/vtk/src/vtk/IO/XMLParser/CMakeLists.txt"
+		}
+	],
+	"target" : 
+	{
+		"labels" : [ "vtkIOXMLParser" ],
+		"name" : "vtkIOXMLParser"
+	}
+}

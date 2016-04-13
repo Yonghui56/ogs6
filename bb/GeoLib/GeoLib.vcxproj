@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{1800EA49-D28F-3AD5-A934-AE950E18B098}</ProjectGUID>
+    <WindowsTargetPlatformVersion>10.0.10586.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>GeoLib</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\ogs\bb\lib\RelWithDebInfo\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">GeoLib.dir\RelWithDebInfo\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">GeoLib</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\ogs\bb\lib\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">GeoLib.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">GeoLib</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\ogs\bb\lib\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">GeoLib.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">GeoLib</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /bigobj /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\ogs\bb\GeoLib;D:\ogs\GeoLib;D:\ogs;D:\ogs\bb\External\boost\src\Boost;C:\libs\include\eigen3;D:\ogs\ThirdParty;D:\ogs\ThirdParty\gtest\include;D:\ogs\ThirdParty\autocheck\include;D:\ogs\ThirdParty\tclap\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4290;4267;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;ENDIAN_IS_LITTLE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;_CRT_XNONSTDC_NO_WARNINGS;__restrict__=__restrict;NOMINMAX;OPENMP_LOOP_TYPE=int;LOGOG_LEVEL=LOGOG_LEVEL_INFO;EIGEN_INITIALIZE_MATRICES_BY_ZERO;OGS_USE_EIGEN;OGS_EIGEN_DYNAMIC_SHAPE_MATRICES;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;ENDIAN_IS_LITTLE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;_CRT_XNONSTDC_NO_WARNINGS;__restrict__=__restrict;NOMINMAX;OPENMP_LOOP_TYPE=int;LOGOG_LEVEL=LOGOG_LEVEL_INFO;EIGEN_INITIALIZE_MATRICES_BY_ZERO;OGS_USE_EIGEN;OGS_EIGEN_DYNAMIC_SHAPE_MATRICES;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\ogs\bb\GeoLib;D:\ogs\GeoLib;D:\ogs;D:\ogs\bb\External\boost\src\Boost;C:\libs\include\eigen3;D:\ogs\ThirdParty;D:\ogs\ThirdParty\gtest\include;D:\ogs\ThirdParty\autocheck\include;D:\ogs\ThirdParty\tclap\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\ogs\bb\GeoLib;D:\ogs\GeoLib;D:\ogs;D:\ogs\bb\External\boost\src\Boost;C:\libs\include\eigen3;D:\ogs\ThirdParty;D:\ogs\ThirdParty\gtest\include;D:\ogs\ThirdParty\autocheck\include;D:\ogs\ThirdParty\tclap\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /bigobj /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\ogs\bb\GeoLib;D:\ogs\GeoLib;D:\ogs;D:\ogs\bb\External\boost\src\Boost;C:\libs\include\eigen3;D:\ogs\ThirdParty;D:\ogs\ThirdParty\gtest\include;D:\ogs\ThirdParty\autocheck\include;D:\ogs\ThirdParty\tclap\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4290;4267;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;ENDIAN_IS_LITTLE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;_CRT_XNONSTDC_NO_WARNINGS;__restrict__=__restrict;NOMINMAX;OPENMP_LOOP_TYPE=int;LOGOG_LEVEL=LOGOG_LEVEL_INFO;EIGEN_INITIALIZE_MATRICES_BY_ZERO;OGS_USE_EIGEN;OGS_EIGEN_DYNAMIC_SHAPE_MATRICES;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;ENDIAN_IS_LITTLE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;_CRT_XNONSTDC_NO_WARNINGS;__restrict__=__restrict;NOMINMAX;OPENMP_LOOP_TYPE=int;LOGOG_LEVEL=LOGOG_LEVEL_INFO;EIGEN_INITIALIZE_MATRICES_BY_ZERO;OGS_USE_EIGEN;OGS_EIGEN_DYNAMIC_SHAPE_MATRICES;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\ogs\bb\GeoLib;D:\ogs\GeoLib;D:\ogs;D:\ogs\bb\External\boost\src\Boost;C:\libs\include\eigen3;D:\ogs\ThirdParty;D:\ogs\ThirdParty\gtest\include;D:\ogs\ThirdParty\autocheck\include;D:\ogs\ThirdParty\tclap\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\ogs\bb\GeoLib;D:\ogs\GeoLib;D:\ogs;D:\ogs\bb\External\boost\src\Boost;C:\libs\include\eigen3;D:\ogs\ThirdParty;D:\ogs\ThirdParty\gtest\include;D:\ogs\ThirdParty\autocheck\include;D:\ogs\ThirdParty\tclap\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /bigobj /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\ogs\bb\GeoLib;D:\ogs\GeoLib;D:\ogs;D:\ogs\bb\External\boost\src\Boost;C:\libs\include\eigen3;D:\ogs\ThirdParty;D:\ogs\ThirdParty\gtest\include;D:\ogs\ThirdParty\autocheck\include;D:\ogs\ThirdParty\tclap\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4290;4267;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;ENDIAN_IS_LITTLE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;_CRT_XNONSTDC_NO_WARNINGS;__restrict__=__restrict;NOMINMAX;OPENMP_LOOP_TYPE=int;LOGOG_LEVEL=LOGOG_LEVEL_INFO;EIGEN_INITIALIZE_MATRICES_BY_ZERO;OGS_USE_EIGEN;OGS_EIGEN_DYNAMIC_SHAPE_MATRICES;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;ENDIAN_IS_LITTLE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;_CRT_XNONSTDC_NO_WARNINGS;__restrict__=__restrict;NOMINMAX;OPENMP_LOOP_TYPE=int;LOGOG_LEVEL=LOGOG_LEVEL_INFO;EIGEN_INITIALIZE_MATRICES_BY_ZERO;OGS_USE_EIGEN;OGS_EIGEN_DYNAMIC_SHAPE_MATRICES;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\ogs\bb\GeoLib;D:\ogs\GeoLib;D:\ogs;D:\ogs\bb\External\boost\src\Boost;C:\libs\include\eigen3;D:\ogs\ThirdParty;D:\ogs\ThirdParty\gtest\include;D:\ogs\ThirdParty\autocheck\include;D:\ogs\ThirdParty\tclap\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\ogs\bb\GeoLib;D:\ogs\GeoLib;D:\ogs;D:\ogs\bb\External\boost\src\Boost;C:\libs\include\eigen3;D:\ogs\ThirdParty;D:\ogs\ThirdParty\gtest\include;D:\ogs\ThirdParty\autocheck\include;D:\ogs\ThirdParty\tclap\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\ogs\GeoLib\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule D:/ogs/GeoLib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\CMake\bin\cmake.exe -HD:/ogs -BD:/ogs/bb --check-stamp-file D:\ogs\bb\GeoLib\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/ogs/GeoLib/CMakeLists.txt;D:\ogs\GeoLib\CMakeLists.txt;D:\ogs\GeoLib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\ogs\bb\GeoLib\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule D:/ogs/GeoLib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\CMake\bin\cmake.exe -HD:/ogs -BD:/ogs/bb --check-stamp-file D:\ogs\bb\GeoLib\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/ogs/GeoLib/CMakeLists.txt;D:\ogs\GeoLib\CMakeLists.txt;D:\ogs\GeoLib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\ogs\bb\GeoLib\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule D:/ogs/GeoLib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\CMake\bin\cmake.exe -HD:/ogs -BD:/ogs/bb --check-stamp-file D:\ogs\bb\GeoLib\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/ogs/GeoLib/CMakeLists.txt;D:\ogs\GeoLib\CMakeLists.txt;D:\ogs\GeoLib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\ogs\bb\GeoLib\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\ogs\GeoLib\AABB.h" />
+    <ClInclude Include="D:\ogs\GeoLib\AnalyticalGeometry-impl.h" />
+    <ClInclude Include="D:\ogs\GeoLib\AnalyticalGeometry.h" />
+    <ClInclude Include="D:\ogs\GeoLib\ClosestPair.h" />
+    <ClInclude Include="D:\ogs\GeoLib\EarClippingTriangulation.h" />
+    <ClInclude Include="D:\ogs\GeoLib\GeoDomain.h" />
+    <ClInclude Include="D:\ogs\GeoLib\GeoObject.h" />
+    <ClInclude Include="D:\ogs\GeoLib\GEOObjects.h" />
+    <ClInclude Include="D:\ogs\GeoLib\GeoType.h" />
+    <ClInclude Include="D:\ogs\GeoLib\Grid.h" />
+    <ClInclude Include="D:\ogs\GeoLib\LineSegment.h" />
+    <ClInclude Include="D:\ogs\GeoLib\MinimalBoundingSphere.h" />
+    <ClInclude Include="D:\ogs\GeoLib\OctTree-impl.h" />
+    <ClInclude Include="D:\ogs\GeoLib\OctTree.h" />
+    <ClInclude Include="D:\ogs\GeoLib\Point.h" />
+    <ClInclude Include="D:\ogs\GeoLib\PointVec.h" />
+    <ClInclude Include="D:\ogs\GeoLib\Polygon.h" />
+    <ClInclude Include="D:\ogs\GeoLib\Polyline.h" />
+    <ClInclude Include="D:\ogs\GeoLib\PolylineVec.h" />
+    <ClInclude Include="D:\ogs\GeoLib\PolylineWithSegmentMarker.h" />
+    <ClInclude Include="D:\ogs\GeoLib\QuadTree.h" />
+    <ClInclude Include="D:\ogs\GeoLib\Raster.h" />
+    <ClInclude Include="D:\ogs\GeoLib\SensorData.h" />
+    <ClInclude Include="D:\ogs\GeoLib\SimplePolygonTree.h" />
+    <ClInclude Include="D:\ogs\GeoLib\Station.h" />
+    <ClInclude Include="D:\ogs\GeoLib\StationBorehole.h" />
+    <ClInclude Include="D:\ogs\GeoLib\Surface.h" />
+    <ClInclude Include="D:\ogs\GeoLib\SurfaceGrid.h" />
+    <ClInclude Include="D:\ogs\GeoLib\SurfaceVec.h" />
+    <ClInclude Include="D:\ogs\GeoLib\TemplateVec.h" />
+    <ClInclude Include="D:\ogs\GeoLib\Triangle.h" />
+    <ClCompile Include="D:\ogs\GeoLib\AnalyticalGeometry.cpp"  />
+    <ClCompile Include="D:\ogs\GeoLib\EarClippingTriangulation.cpp"  />
+    <ClCompile Include="D:\ogs\GeoLib\GEOObjects.cpp"  />
+    <ClCompile Include="D:\ogs\GeoLib\GeoType.cpp"  />
+    <ClCompile Include="D:\ogs\GeoLib\MinimalBoundingSphere.cpp"  />
+    <ClCompile Include="D:\ogs\GeoLib\Point.cpp"  />
+    <ClCompile Include="D:\ogs\GeoLib\PointVec.cpp"  />
+    <ClCompile Include="D:\ogs\GeoLib\Polygon.cpp"  />
+    <ClCompile Include="D:\ogs\GeoLib\Polyline.cpp"  />
+    <ClCompile Include="D:\ogs\GeoLib\PolylineWithSegmentMarker.cpp"  />
+    <ClCompile Include="D:\ogs\GeoLib\Raster.cpp"  />
+    <ClCompile Include="D:\ogs\GeoLib\SensorData.cpp"  />
+    <ClCompile Include="D:\ogs\GeoLib\SimplePolygonTree.cpp"  />
+    <ClCompile Include="D:\ogs\GeoLib\Station.cpp"  />
+    <ClCompile Include="D:\ogs\GeoLib\StationBorehole.cpp"  />
+    <ClCompile Include="D:\ogs\GeoLib\Surface.cpp"  />
+    <ClCompile Include="D:\ogs\GeoLib\SurfaceGrid.cpp"  />
+    <ClCompile Include="D:\ogs\GeoLib\Triangle.cpp"  />
+    <ClCompile Include="D:\ogs\ThirdParty\tetgen\predicates.cxx"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/ogs/bb/ZERO_CHECK.vcxproj">
+      <Project>5D314217-4B27-38AC-925F-9EB30DDEF460</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/ogs/bb/Boost.vcxproj">
+      <Project>5EDBED25-1A0A-31A1-8653-643247264E77</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

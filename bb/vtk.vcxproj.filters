@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\ogs\CMakeLists.txt" />
+    <CustomBuild Include="D:\ogs\bb\CMakeFiles\f3d325460fe9d992c4728b37f949eca3\vtk-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\ogs\bb\CMakeFiles\f3d325460fe9d992c4728b37f949eca3\vtk-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\ogs\bb\CMakeFiles\f3d325460fe9d992c4728b37f949eca3\vtk-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\ogs\bb\CMakeFiles\f3d325460fe9d992c4728b37f949eca3\vtk-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\ogs\bb\CMakeFiles\f3d325460fe9d992c4728b37f949eca3\vtk-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\ogs\bb\CMakeFiles\f3d325460fe9d992c4728b37f949eca3\vtk-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\ogs\bb\CMakeFiles\f3d325460fe9d992c4728b37f949eca3\vtk-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\ogs\bb\CMakeFiles\54f0d0ced548b089b5f58675f2cd635d\vtk-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\ogs\bb\CMakeFiles\2368c047e368b67918df9a202e8c5360\vtk.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\ogs\bb\CMakeFiles\vtk" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{5831A536-5C50-328B-B3D7-97B5164570FD}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

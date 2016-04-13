@@ -1,0 +1,423 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\ogs\MeshLib\convertMeshToGeo.cpp">
+      <Filter>MeshLib</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\MeshLib\CoordinateSystem.cpp">
+      <Filter>MeshLib</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\MeshLib\ElementCoordinatesMappingLocal.cpp">
+      <Filter>MeshLib</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\MeshLib\ElementStatus.cpp">
+      <Filter>MeshLib</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\MeshLib\Location.cpp">
+      <Filter>MeshLib</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\MeshLib\Mesh.cpp">
+      <Filter>MeshLib</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\MeshLib\MeshEnums.cpp">
+      <Filter>MeshLib</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\MeshLib\MeshInformation.cpp">
+      <Filter>MeshLib</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\MeshLib\MeshSurfaceExtraction.cpp">
+      <Filter>MeshLib</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\MeshLib\Node.cpp">
+      <Filter>MeshLib</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\MeshLib\Properties.cpp">
+      <Filter>MeshLib</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\MeshLib\VtkOGSEnum.cpp">
+      <Filter>MeshLib</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\MeshLib\Elements\CellRule.cpp">
+      <Filter>MeshLib\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\MeshLib\Elements\EdgeReturn.cpp">
+      <Filter>MeshLib\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\MeshLib\Elements\Element.cpp">
+      <Filter>MeshLib\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\MeshLib\Elements\FaceRule.cpp">
+      <Filter>MeshLib\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\MeshLib\Elements\HexRule20.cpp">
+      <Filter>MeshLib\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\MeshLib\Elements\HexRule8.cpp">
+      <Filter>MeshLib\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\MeshLib\Elements\LineRule2.cpp">
+      <Filter>MeshLib\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\MeshLib\Elements\PointRule1.cpp">
+      <Filter>MeshLib\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\MeshLib\Elements\PrismRule15.cpp">
+      <Filter>MeshLib\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\MeshLib\Elements\PrismRule6.cpp">
+      <Filter>MeshLib\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\MeshLib\Elements\PyramidRule13.cpp">
+      <Filter>MeshLib\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\MeshLib\Elements\PyramidRule5.cpp">
+      <Filter>MeshLib\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\MeshLib\Elements\QuadRule4.cpp">
+      <Filter>MeshLib\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\MeshLib\Elements\QuadRule8.cpp">
+      <Filter>MeshLib\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\MeshLib\Elements\TemplateElement.cpp">
+      <Filter>MeshLib\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\MeshLib\Elements\TetRule10.cpp">
+      <Filter>MeshLib\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\MeshLib\Elements\TetRule4.cpp">
+      <Filter>MeshLib\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\MeshLib\Elements\TriRule3.cpp">
+      <Filter>MeshLib\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\MeshLib\Elements\TriRule6.cpp">
+      <Filter>MeshLib\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\MeshLib\MeshEditing\AddLayerToMesh.cpp">
+      <Filter>MeshLib\MeshEditing</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\MeshLib\MeshEditing\DuplicateMeshComponents.cpp">
+      <Filter>MeshLib\MeshEditing</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\MeshLib\MeshEditing\ElementValueModification.cpp">
+      <Filter>MeshLib\MeshEditing</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\MeshLib\MeshEditing\FlipElements.cpp">
+      <Filter>MeshLib\MeshEditing</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\MeshLib\MeshEditing\Mesh2MeshPropertyInterpolation.cpp">
+      <Filter>MeshLib\MeshEditing</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\MeshLib\MeshEditing\MeshRevision.cpp">
+      <Filter>MeshLib\MeshEditing</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\MeshLib\MeshEditing\RemoveMeshComponents.cpp">
+      <Filter>MeshLib\MeshEditing</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\MeshLib\MeshGenerators\LayeredMeshGenerator.cpp">
+      <Filter>MeshLib\MeshGenerators</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\MeshLib\MeshGenerators\LayeredVolume.cpp">
+      <Filter>MeshLib\MeshGenerators</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\MeshLib\MeshGenerators\MeshGenerator.cpp">
+      <Filter>MeshLib\MeshGenerators</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\MeshLib\MeshGenerators\MeshLayerMapper.cpp">
+      <Filter>MeshLib\MeshGenerators</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\MeshLib\MeshGenerators\RasterToMesh.cpp">
+      <Filter>MeshLib\MeshGenerators</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\MeshLib\MeshGenerators\VtkMeshConverter.cpp">
+      <Filter>MeshLib\MeshGenerators</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\MeshLib\MeshQuality\AngleSkewMetric.cpp">
+      <Filter>MeshLib\MeshQuality</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\MeshLib\MeshQuality\EdgeRatioMetric.cpp">
+      <Filter>MeshLib\MeshQuality</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\MeshLib\MeshQuality\ElementQualityMetric.cpp">
+      <Filter>MeshLib\MeshQuality</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\MeshLib\MeshQuality\ElementSizeMetric.cpp">
+      <Filter>MeshLib\MeshQuality</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\MeshLib\MeshQuality\MeshValidation.cpp">
+      <Filter>MeshLib\MeshQuality</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\MeshLib\MeshQuality\RadiusEdgeRatioMetric.cpp">
+      <Filter>MeshLib\MeshQuality</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\MeshLib\MeshQuality\SizeDifferenceMetric.cpp">
+      <Filter>MeshLib\MeshQuality</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\MeshLib\MeshSearch\ElementSearch.cpp">
+      <Filter>MeshLib\MeshSearch</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\MeshLib\MeshSearch\MeshElementGrid.cpp">
+      <Filter>MeshLib\MeshSearch</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ogs\MeshLib\MeshSearch\NodeSearch.cpp">
+      <Filter>MeshLib\MeshSearch</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\ogs\MeshLib\convertMeshToGeo.h">
+      <Filter>MeshLib</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\CoordinateSystem.h">
+      <Filter>MeshLib</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\ElementCoordinatesMappingLocal.h">
+      <Filter>MeshLib</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\ElementStatus.h">
+      <Filter>MeshLib</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\Location.h">
+      <Filter>MeshLib</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\Mesh.h">
+      <Filter>MeshLib</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\MeshEnums.h">
+      <Filter>MeshLib</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\MeshInformation.h">
+      <Filter>MeshLib</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\MeshSubset.h">
+      <Filter>MeshLib</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\MeshSubsets.h">
+      <Filter>MeshLib</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\MeshSurfaceExtraction.h">
+      <Filter>MeshLib</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\Node.h">
+      <Filter>MeshLib</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\NodeAdjacencyTable.h">
+      <Filter>MeshLib</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\Properties-impl.h">
+      <Filter>MeshLib</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\Properties.h">
+      <Filter>MeshLib</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\PropertyVector.h">
+      <Filter>MeshLib</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\VtkOGSEnum.h">
+      <Filter>MeshLib</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\Elements\CellRule.h">
+      <Filter>MeshLib\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\Elements\EdgeReturn.h">
+      <Filter>MeshLib\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\Elements\EdgeRule.h">
+      <Filter>MeshLib\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\Elements\Element.h">
+      <Filter>MeshLib\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\Elements\Elements.h">
+      <Filter>MeshLib\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\Elements\FaceRule.h">
+      <Filter>MeshLib\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\Elements\Hex.h">
+      <Filter>MeshLib\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\Elements\HexRule20.h">
+      <Filter>MeshLib\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\Elements\HexRule8.h">
+      <Filter>MeshLib\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\Elements\Line.h">
+      <Filter>MeshLib\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\Elements\LineRule2.h">
+      <Filter>MeshLib\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\Elements\LineRule3.h">
+      <Filter>MeshLib\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\Elements\Point.h">
+      <Filter>MeshLib\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\Elements\PointRule1.h">
+      <Filter>MeshLib\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\Elements\Prism.h">
+      <Filter>MeshLib\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\Elements\PrismRule15.h">
+      <Filter>MeshLib\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\Elements\PrismRule6.h">
+      <Filter>MeshLib\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\Elements\Pyramid.h">
+      <Filter>MeshLib\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\Elements\PyramidRule13.h">
+      <Filter>MeshLib\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\Elements\PyramidRule5.h">
+      <Filter>MeshLib\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\Elements\Quad.h">
+      <Filter>MeshLib\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\Elements\QuadRule4.h">
+      <Filter>MeshLib\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\Elements\QuadRule8.h">
+      <Filter>MeshLib\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\Elements\QuadRule9.h">
+      <Filter>MeshLib\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\Elements\TemplateElement-impl.h">
+      <Filter>MeshLib\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\Elements\TemplateElement.h">
+      <Filter>MeshLib\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\Elements\Tet.h">
+      <Filter>MeshLib\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\Elements\TetRule10.h">
+      <Filter>MeshLib\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\Elements\TetRule4.h">
+      <Filter>MeshLib\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\Elements\Tri.h">
+      <Filter>MeshLib\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\Elements\TriRule3.h">
+      <Filter>MeshLib\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\Elements\TriRule6.h">
+      <Filter>MeshLib\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\Elements\VertexRule.h">
+      <Filter>MeshLib\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\MeshEditing\AddLayerToMesh.h">
+      <Filter>MeshLib\MeshEditing</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\MeshEditing\DuplicateMeshComponents.h">
+      <Filter>MeshLib\MeshEditing</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\MeshEditing\ElementValueModification.h">
+      <Filter>MeshLib\MeshEditing</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\MeshEditing\FlipElements.h">
+      <Filter>MeshLib\MeshEditing</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\MeshEditing\Mesh2MeshPropertyInterpolation.h">
+      <Filter>MeshLib\MeshEditing</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\MeshEditing\MeshRevision.h">
+      <Filter>MeshLib\MeshEditing</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\MeshEditing\moveMeshNodes.h">
+      <Filter>MeshLib\MeshEditing</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\MeshEditing\projectMeshOntoPlane.h">
+      <Filter>MeshLib\MeshEditing</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\MeshEditing\RemoveMeshComponents.h">
+      <Filter>MeshLib\MeshEditing</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\MeshGenerators\LayeredMeshGenerator.h">
+      <Filter>MeshLib\MeshGenerators</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\MeshGenerators\LayeredVolume.h">
+      <Filter>MeshLib\MeshGenerators</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\MeshGenerators\MeshGenerator.h">
+      <Filter>MeshLib\MeshGenerators</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\MeshGenerators\MeshLayerMapper.h">
+      <Filter>MeshLib\MeshGenerators</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\MeshGenerators\RasterToMesh.h">
+      <Filter>MeshLib\MeshGenerators</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\MeshGenerators\VtkMeshConverter.h">
+      <Filter>MeshLib\MeshGenerators</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\MeshQuality\AngleSkewMetric.h">
+      <Filter>MeshLib\MeshQuality</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\MeshQuality\EdgeRatioMetric.h">
+      <Filter>MeshLib\MeshQuality</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\MeshQuality\ElementErrorCode.h">
+      <Filter>MeshLib\MeshQuality</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\MeshQuality\ElementQualityInterface.h">
+      <Filter>MeshLib\MeshQuality</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\MeshQuality\ElementQualityMetric.h">
+      <Filter>MeshLib\MeshQuality</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\MeshQuality\ElementSizeMetric.h">
+      <Filter>MeshLib\MeshQuality</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\MeshQuality\MeshValidation.h">
+      <Filter>MeshLib\MeshQuality</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\MeshQuality\RadiusEdgeRatioMetric.h">
+      <Filter>MeshLib\MeshQuality</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\MeshQuality\SizeDifferenceMetric.h">
+      <Filter>MeshLib\MeshQuality</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\MeshSearch\ElementSearch.h">
+      <Filter>MeshLib\MeshSearch</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\MeshSearch\MeshElementGrid.h">
+      <Filter>MeshLib\MeshSearch</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ogs\MeshLib\MeshSearch\NodeSearch.h">
+      <Filter>MeshLib\MeshSearch</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\ogs\MeshLib\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="MeshLib\Elements">
+      <UniqueIdentifier>{E240E67D-720A-36FA-A98B-2B30A031FC24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MeshLib\MeshEditing">
+      <UniqueIdentifier>{C9403D9E-2248-3FB4-9E05-BF140B9841E9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MeshLib\MeshGenerators">
+      <UniqueIdentifier>{4831BA8C-B3B0-3DA9-A40B-F41FEF9E1F37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MeshLib\MeshSearch">
+      <UniqueIdentifier>{19F07490-8BA2-399C-9059-3AB76840B8DC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MeshLib\MeshQuality">
+      <UniqueIdentifier>{266BBE87-81D4-3983-A8B8-539CC7B3B411}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MeshLib">
+      <UniqueIdentifier>{A2C0A433-A1EB-328A-85C3-CF1E3B9EF953}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
