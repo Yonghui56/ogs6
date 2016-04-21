@@ -204,6 +204,7 @@ void ProjectData::buildProcesses()
 			_processes.emplace_back(
 				ProcessLib::createRichardsFlowProcess<GlobalSetupType>(
 					*_mesh_vec[0], *nl_slv, std::move(time_disc),
+					_process_variables, _parameters, pc,_curves));
 		}
 
 		else
@@ -410,5 +411,9 @@ void ProjectData::parseCurves(
 			name,
 			createPiecewiseLinearInterpolation(conf),
 			"The curve name is not unique.");
+		
+
 	}
+	
+	
 }
