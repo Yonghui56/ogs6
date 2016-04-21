@@ -59,18 +59,15 @@ public:
         _localA.setZero();
         _localRhs.setZero();
 
-<<<<<<< HEAD:ProcessLib/GroundwaterFlowFEM.h
-        IntegrationMethod_ integration_method(_integration_order);
-        unsigned const n_integration_points = integration_method.getNPoints();//retuen gauss point number
-=======
+
         IntegrationMethod integration_method(_integration_order);
         unsigned const n_integration_points = integration_method.getNPoints();
->>>>>>> c3a4370a78223a8afaa1c3b0fde21259cbb01d20:ProcessLib/GroundwaterFlow/GroundwaterFlowFEM.h
+
 
         for (std::size_t ip(0); ip < n_integration_points; ip++) {
             auto const& sm = _shape_matrices[ip];
             auto const& wp = integration_method.getWeightedPoint(ip);
-
+			
             auto const k = _process_data.hydraulic_conductivity(_element);
             _localA.noalias() += sm.dNdx.transpose() * k * sm.dNdx *
                                  sm.detJ * wp.getWeight();

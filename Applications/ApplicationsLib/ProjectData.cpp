@@ -34,14 +34,14 @@
 
 #include "UncoupledProcessesTimeLoop.h"
 
-<<<<<<< HEAD
-#include "ProcessLib/GroundwaterFlowProcess-fwd.h"
-#include "ProcessLib/MassTransportProcess-fwd.h"
-#include "ProcessLib/RichardsFlowProcess-fwd.h"
-=======
+//<<<<<<< HEAD
+//#include "ProcessLib/GroundwaterFlowProcess-fwd.h"
+//#include "ProcessLib/MassTransportProcess-fwd.h"
+//#include "ProcessLib/RichardsFlowProcess-fwd.h"
+//=======
 #include "ProcessLib/GroundwaterFlow/GroundwaterFlowProcess-fwd.h"
-
->>>>>>> c3a4370a78223a8afaa1c3b0fde21259cbb01d20
+#include "ProcessLib/RichardsFlow/RichardsFlowProcess-fwd.h"
+//>>>>>>> c3a4370a78223a8afaa1c3b0fde21259cbb01d20
 
 namespace detail
 {
@@ -79,8 +79,8 @@ ProjectData::ProjectData(BaseLib::ConfigTree const& project_config,
 	}
 	_mesh_vec.push_back(mesh);
 	
-	// curves
-	parseCurves(project_config.getConfSubtreeOptional("curves"));
+	//// curves
+	//parseCurves(project_config.getConfSubtreeOptional("curves"));
 
 	// curves
 	parseCurves(project_config.getConfSubtreeOptional("curves"));
@@ -189,6 +189,7 @@ void ProjectData::buildProcesses()
 		}
 
 
+		/*
 		else if (type == "Mass_Transport")
 		{
 			// The existence check of the in the configuration referenced
@@ -201,7 +202,8 @@ void ProjectData::buildProcesses()
 					*_mesh_vec[0], *nl_slv, std::move(time_disc),
 					_process_variables, _parameters, pc));
 		}
-
+		*/
+		
 		else if (type == "RICHARDS_FLOW")
 		{
 			// The existence check of the in the configuration referenced
@@ -210,11 +212,11 @@ void ProjectData::buildProcesses()
 			// several meshes. Then we have to assign the referenced mesh
 			// here.
 			_processes.emplace_back(
-				ProcessLib::createRichardsFlowProcess<GlobalSetupType>(
+				ProcessLib::RichardsFlow::createRichardsFlowProcess<GlobalSetupType>(
 					*_mesh_vec[0], *nl_slv, std::move(time_disc),
 					_process_variables, _parameters, pc,_curves));
 		}
-
+		
 		else
 		{
 			ERR("Unknown process type: %s", type.c_str());
@@ -393,21 +395,7 @@ void ProjectData::parseNonlinearSolvers(BaseLib::ConfigTree const& config)
 		    "The nonlinear solver name is not unique");
 	}
 }
-<<<<<<< HEAD
-static std::unique_ptr<MathLib::PiecewiseLinearInterpolation>
-createPiecewiseLinearInterpolation(BaseLib::ConfigTree const& config)
-{
-	auto const times = config.getConfParam<std::vector<double>>("times");
-	auto const values = config.getConfParam<std::vector<double>>("values");
-	assert(times.size() == values.size());
 
-	return std::unique_ptr<MathLib::PiecewiseLinearInterpolation>{
-		new MathLib::PiecewiseLinearInterpolation{ times, values }};
-}
-
-void ProjectData::parseCurves(
-	boost::optional<BaseLib::ConfigTree> const& config)
-=======
 
 static std::unique_ptr<MathLib::PiecewiseLinearInterpolation>
 createPiecewiseLinearInterpolation(BaseLib::ConfigTree const& config)
@@ -426,13 +414,12 @@ createPiecewiseLinearInterpolation(BaseLib::ConfigTree const& config)
 	}
 
 	return std::unique_ptr<MathLib::PiecewiseLinearInterpolation>{
-	    new MathLib::PiecewiseLinearInterpolation{std::move(coords),
-	                                              std::move(values)}};
+		new MathLib::PiecewiseLinearInterpolation{ std::move(coords),
+			std::move(values) }};
 }
 
 void ProjectData::parseCurves(
-    boost::optional<BaseLib::ConfigTree> const& config)
->>>>>>> c3a4370a78223a8afaa1c3b0fde21259cbb01d20
+	boost::optional<BaseLib::ConfigTree> const& config)
 {
 	if (!config) return;
 
@@ -442,21 +429,10 @@ void ProjectData::parseCurves(
 	{
 		auto const name = conf.getConfParam<std::string>("name");
 		BaseLib::insertIfKeyUniqueElseError(
-<<<<<<< HEAD
 			_curves,
 			name,
 			createPiecewiseLinearInterpolation(conf),
 			"The curve name is not unique.");
-		
-
 	}
-	
-	
-=======
-		    _curves,
-		    name,
-		    createPiecewiseLinearInterpolation(conf),
-		    "The curve name is not unique.");
-	}
->>>>>>> c3a4370a78223a8afaa1c3b0fde21259cbb01d20
 }
+
