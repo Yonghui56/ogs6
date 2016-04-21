@@ -13,7 +13,10 @@
 #ifndef PROJECTDATA_H_
 #define PROJECTDATA_H_
 
+#include <map>
 #include <memory>
+#include <string>
+#include <boost/optional/optional.hpp>
 
 #include "BaseLib/ConfigTree.h"
 
@@ -222,7 +225,11 @@ private:
 	using NonlinearSolver = NumLib::NonlinearSolverBase<GlobalMatrix, GlobalVector>;
 	std::map<std::string, std::unique_ptr<NonlinearSolver> > _nonlinear_solvers;
 	std::map<std::string,
+<<<<<<< HEAD
 		std::unique_ptr<MathLib::PiecewiseLinearInterpolation>> _curves;
+=======
+	         std::unique_ptr<MathLib::PiecewiseLinearInterpolation>> _curves;
+>>>>>>> c3a4370a78223a8afaa1c3b0fde21259cbb01d20
 };
 
 #endif //PROJECTDATA_H_

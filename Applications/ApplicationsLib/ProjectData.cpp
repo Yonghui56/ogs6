@@ -34,9 +34,14 @@
 
 #include "UncoupledProcessesTimeLoop.h"
 
+<<<<<<< HEAD
 #include "ProcessLib/GroundwaterFlowProcess-fwd.h"
 #include "ProcessLib/MassTransportProcess-fwd.h"
 #include "ProcessLib/RichardsFlowProcess-fwd.h"
+=======
+#include "ProcessLib/GroundwaterFlow/GroundwaterFlowProcess-fwd.h"
+
+>>>>>>> c3a4370a78223a8afaa1c3b0fde21259cbb01d20
 
 namespace detail
 {
@@ -77,8 +82,10 @@ ProjectData::ProjectData(BaseLib::ConfigTree const& project_config,
 	// curves
 	parseCurves(project_config.getConfSubtreeOptional("curves"));
 
-	// process variables
+	// curves
+	parseCurves(project_config.getConfSubtreeOptional("curves"));
 
+	// process variables
 	parseProcessVariables(project_config.getConfSubtree("process_variables"));
 
 	// parameters
@@ -175,7 +182,8 @@ void ProjectData::buildProcesses()
 			// several meshes. Then we have to assign the referenced mesh
 			// here.
 			_processes.emplace_back(
-				ProcessLib::createGroundwaterFlowProcess<GlobalSetupType>(
+				ProcessLib::GroundwaterFlow::
+				createGroundwaterFlowProcess<GlobalSetupType>(
 				    *_mesh_vec[0], *nl_slv, std::move(time_disc),
 				    _process_variables, _parameters, pc));
 		}
@@ -385,6 +393,7 @@ void ProjectData::parseNonlinearSolvers(BaseLib::ConfigTree const& config)
 		    "The nonlinear solver name is not unique");
 	}
 }
+<<<<<<< HEAD
 static std::unique_ptr<MathLib::PiecewiseLinearInterpolation>
 createPiecewiseLinearInterpolation(BaseLib::ConfigTree const& config)
 {
@@ -398,6 +407,32 @@ createPiecewiseLinearInterpolation(BaseLib::ConfigTree const& config)
 
 void ProjectData::parseCurves(
 	boost::optional<BaseLib::ConfigTree> const& config)
+=======
+
+static std::unique_ptr<MathLib::PiecewiseLinearInterpolation>
+createPiecewiseLinearInterpolation(BaseLib::ConfigTree const& config)
+{
+	auto coords = config.getConfParam<std::vector<double>>("coords");
+	auto values = config.getConfParam<std::vector<double>>("values");
+	if (coords.empty() || values.empty())
+	{
+		ERR("The given co-ordinates or values vector is empty.");
+		std::abort();
+	}
+	if (coords.size() != values.size())
+	{
+		ERR("The given co-ordinates and values vector sizes are different.");
+		std::abort();
+	}
+
+	return std::unique_ptr<MathLib::PiecewiseLinearInterpolation>{
+	    new MathLib::PiecewiseLinearInterpolation{std::move(coords),
+	                                              std::move(values)}};
+}
+
+void ProjectData::parseCurves(
+    boost::optional<BaseLib::ConfigTree> const& config)
+>>>>>>> c3a4370a78223a8afaa1c3b0fde21259cbb01d20
 {
 	if (!config) return;
 
@@ -407,6 +442,7 @@ void ProjectData::parseCurves(
 	{
 		auto const name = conf.getConfParam<std::string>("name");
 		BaseLib::insertIfKeyUniqueElseError(
+<<<<<<< HEAD
 			_curves,
 			name,
 			createPiecewiseLinearInterpolation(conf),
@@ -416,4 +452,11 @@ void ProjectData::parseCurves(
 	}
 	
 	
+=======
+		    _curves,
+		    name,
+		    createPiecewiseLinearInterpolation(conf),
+		    "The curve name is not unique.");
+	}
+>>>>>>> c3a4370a78223a8afaa1c3b0fde21259cbb01d20
 }
