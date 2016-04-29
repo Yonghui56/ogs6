@@ -10,15 +10,13 @@
  *
  */
 
-#include <iostream>
+#include "MeshComponentMap.h"
 
 #include "MeshLib/MeshSubsets.h"
 
 #ifdef USE_PETSC
 #include "MeshLib/NodePartitionedMesh.h"
 #endif
-
-#include "MeshComponentMap.h"
 
 namespace AssemblerLib
 {
@@ -66,6 +64,8 @@ MeshComponentMap::MeshComponentMap(
         {
             MeshLib::MeshSubset const& mesh_subset =
                 c->getMeshSubset(mesh_subset_index);
+            assert(dynamic_cast<MeshLib::NodePartitionedMesh const*>(
+                       &mesh_subset.getMesh()) != nullptr);
             std::size_t const mesh_id = mesh_subset.getMeshID();
             const MeshLib::NodePartitionedMesh& mesh =
                 static_cast<const MeshLib::NodePartitionedMesh&>(
