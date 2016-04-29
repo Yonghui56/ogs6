@@ -50,7 +50,10 @@ solve(Vector &x)
     for (unsigned iteration=1; iteration<_maxiter; ++iteration)
     {
         sys.preIteration(iteration, x);
+		for (int ii = 0; ii < x.size(); ii++) {
 
+			std::cout << ii <<", "<< x[ii] << std::endl;
+		}
         sys.assembleMatricesPicard(x);
         sys.getA(A);
         sys.getRhs(rhs);
@@ -62,7 +65,6 @@ solve(Vector &x)
         // std::cout << "rhs:\n" << rhs << "\n\n";
 
         bool iteration_succeeded = _linear_solver.solve(A, rhs, x_new);
-
         if (!iteration_succeeded)
         {
             ERR("The linear solver failed.");
@@ -95,21 +97,19 @@ solve(Vector &x)
         // x is used as delta_x in order to compute the error.
         BLAS::aypx(x, -1.0, x_new); // x = _x_new - x
         auto const error = BLAS::norm2(x);
-        // INFO("  picard iteration %u error: %e", iteration, error);
-
+        INFO("  picard iteration %u error: %e", iteration, error);
         // Update x s.t. in the next iteration we will compute the right delta x
-        BLAS::copy(x_new, x);
-
+        BLAS::copy(x_new, x);                     
         if (error < _tol) {
             error_norms_met = true;
             break;
         }
 
-        if (sys.isLinear()) {
+        /*if (sys.isLinear()) {
             // INFO("  picard linear system. not looping");
             error_norms_met = true;
             break;
-        }
+        }*/
     }
 
     MathLib::GlobalMatrixProvider<Matrix>::provider.releaseMatrix(A);

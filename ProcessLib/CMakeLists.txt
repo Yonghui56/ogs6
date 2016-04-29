@@ -9,6 +9,9 @@ APPEND_SOURCE_FILES(SOURCES GroundwaterFlow)
 add_subdirectory(RichardsFlow)
 APPEND_SOURCE_FILES(SOURCES RichardsFlow)
 
+add_subdirectory(TwophaseFlow)
+APPEND_SOURCE_FILES(SOURCES TwophaseFlow)
+
 add_library(ProcessLib STATIC ${SOURCES})
 
 target_link_libraries(ProcessLib INTERFACE

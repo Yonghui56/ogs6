@@ -41,6 +41,7 @@
 //=======
 #include "ProcessLib/GroundwaterFlow/GroundwaterFlowProcess-fwd.h"
 #include "ProcessLib/RichardsFlow/RichardsFlowProcess-fwd.h"
+#include "ProcessLib/TwophaseFlow/TwophaseFlowProcess-fwd.h"
 //>>>>>>> c3a4370a78223a8afaa1c3b0fde21259cbb01d20
 
 namespace detail
@@ -215,6 +216,19 @@ void ProjectData::buildProcesses()
 				ProcessLib::RichardsFlow::createRichardsFlowProcess<GlobalSetupType>(
 					*_mesh_vec[0], *nl_slv, std::move(time_disc),
 					_process_variables, _parameters, pc,_curves));
+		}
+
+		else if (type == "TWOPHASE_FLOW")
+		{
+			// The existence check of the in the configuration referenced
+			// process variables is checked in the physical process.
+			// TODO at the moment we have only one mesh, later there can be
+			// several meshes. Then we have to assign the referenced mesh
+			// here.
+			_processes.emplace_back(
+				ProcessLib::TwophaseFlow::createTwophaseFlowProcess<GlobalSetupType>(
+					*_mesh_vec[0], *nl_slv, std::move(time_disc),
+					_process_variables, _parameters, pc, _curves));
 		}
 		
 		else
