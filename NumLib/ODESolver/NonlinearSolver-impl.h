@@ -47,6 +47,8 @@ solve(Vector &x)
 
     BLAS::copy(x, x_new); // set initial guess, TODO save the copy
 
+	static unsigned unique_iteration_count = 0:
+
     for (unsigned iteration=1; iteration<_maxiter; ++iteration)
     {
         sys.preIteration(iteration, x);
@@ -63,6 +65,11 @@ solve(Vector &x)
 
 		//A.write("A_" + std::to_string(iteration));
 		//rhs.write("rhs_" + std::to_string(iteration));
+
+		++unique_iteration_count;
+			
+		A.write("global_A_" + std::to_string(unique_iteration_count));
+
         bool iteration_succeeded = _linear_solver.solve(A, rhs, x_new);
 
         if (!iteration_succeeded)
@@ -97,7 +104,7 @@ solve(Vector &x)
         // x is used as delta_x in order to compute the error.
         BLAS::aypx(x, -1.0, x_new); // x = _x_new - x
         auto const error = BLAS::norm2(x);
-        // INFO("  picard iteration %u error: %e", iteration, error);
+        INFO("  picard iteration %u error: %e", iteration, error);
 
         // Update x s.t. in the next iteration we will compute the right delta x
         BLAS::copy(x_new, x);
