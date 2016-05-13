@@ -13,34 +13,21 @@
 #include <cstdlib>
 #include <vector>
 
-// TCLAP
-#include "tclap/CmdLine.h"
+#include <tclap/CmdLine.h>
 
-// ThirdParty/logog
-#include "logog/include/logog.hpp"
+#include "Applications/ApplicationsLib/LogogSetup.h"
 
-// BaseLib
-#include "BaseLib/LogogSimpleFormatter.h"
-
-// FileIO
-#include "FileIO/readMeshFromFile.h"
-#include "FileIO/XmlIO/Boost/BoostXmlGmlInterface.h"
-
-// GeoLib
 #include "GeoLib/GEOObjects.h"
+#include "GeoLib/IO/XmlIO/Boost/BoostXmlGmlInterface.h"
 
-// MeshLib
 #include "MeshLib/Mesh.h"
+#include "MeshLib/IO/readMeshFromFile.h"
 
-// MeshGeoToolsLib
 #include "MeshGeoToolsLib/GeoMapper.h"
 
 int main (int argc, char* argv[])
 {
-	LOGOG_INITIALIZE();
-	logog::Cout* logog_cout (new logog::Cout);
-	BaseLib::LogogSimpleFormatter *custom_format (new BaseLib::LogogSimpleFormatter);
-	logog_cout->SetFormatter(*custom_format);
+	ApplicationsLib::LogogSetup logog_setup;
 
 	TCLAP::CmdLine cmd("Maps geometric objects to the surface of a given mesh."
 		"The documentation is available at https://docs.opengeosys.org/docs/tools/model-preparation/map-geometric-object-to-the-surface-of-a-mesh",
@@ -66,12 +53,12 @@ int main (int argc, char* argv[])
 	cmd.parse(argc, argv);
 
 	// *** read mesh
-	MeshLib::Mesh * mesh(FileIO::readMeshFromFile(mesh_in.getValue()));
+	MeshLib::Mesh * mesh(MeshLib::IO::readMeshFromFile(mesh_in.getValue()));
 
 	// *** read geometry
 	GeoLib::GEOObjects geometries;
 	{
-		FileIO::BoostXmlGmlInterface xml_io(geometries);
+		GeoLib::IO::BoostXmlGmlInterface xml_io(geometries);
 		if (xml_io.readFile(input_geometry_fname.getValue())) {
 			INFO("Read geometry from file \"%s\".",
 				input_geometry_fname.getValue().c_str());
@@ -98,7 +85,7 @@ int main (int argc, char* argv[])
 	}
 
 	{
-		FileIO::BoostXmlGmlInterface xml_io(geometries);
+		GeoLib::IO::BoostXmlGmlInterface xml_io(geometries);
 		xml_io.setNameForExport(new_geo_name);
 		xml_io.writeToFile(output_geometry_fname.getValue());
 	}

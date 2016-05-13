@@ -11,25 +11,21 @@
 #include <string>
 #include <vector>
 
-// TCLAP
-#include "tclap/CmdLine.h"
+#include <tclap/CmdLine.h>
 
-// ThirdParty/logog
-#include "logog/include/logog.hpp"
+#include "Applications/ApplicationsLib/LogogSetup.h"
 
 // BaseLib
 #include "BaseLib/BuildInfo.h"
-#include "BaseLib/LogogSimpleFormatter.h"
 #include "BaseLib/FileTools.h"
 
 // GeoLib
 #include "GeoLib/Point.h"
 #include "GeoLib/Surface.h"
 #include "GeoLib/PointVec.h"
+#include "GeoLib/IO/TINInterface.h"
 
-// FileIO
-#include "FileIO/VtkIO/VtuInterface.h"
-#include "FileIO/TINInterface.h"
+#include "MeshLib/IO/VtkIO/VtuInterface.h"
 
 // MeshLib
 #include "MeshLib/Mesh.h"
@@ -38,10 +34,7 @@
 
 int main (int argc, char* argv[])
 {
-	LOGOG_INITIALIZE();
-	logog::Cout* logog_cout (new logog::Cout);
-	BaseLib::LogogSimpleFormatter *custom_format (new BaseLib::LogogSimpleFormatter);
-	logog_cout->SetFormatter(*custom_format);
+	ApplicationsLib::LogogSetup logog_setup;
 
 	TCLAP::CmdLine cmd("Converts TIN file into VTU file.", ' ', BaseLib::BuildInfo::git_describe);
 	TCLAP::ValueArg<std::string> inArg("i", "input-tin-file",
@@ -59,9 +52,10 @@ int main (int argc, char* argv[])
 	auto pnt_vec = std::unique_ptr<std::vector<GeoLib::Point*>>(
 	    new std::vector<GeoLib::Point*>);
 	GeoLib::PointVec point_vec("SurfacePoints", std::move(pnt_vec));
-	std::unique_ptr<GeoLib::Surface> sfc(FileIO::TINInterface::readTIN(tinFileName, point_vec));
+	std::unique_ptr<GeoLib::Surface> sfc(
+	    GeoLib::IO::TINInterface::readTIN(tinFileName, point_vec));
 	if (!sfc)
-		return 1;
+		return EXIT_FAILURE;
 	INFO("TIN read:  %d points, %d triangles", pnt_vec->size(), sfc->getNTriangles());
 
 	INFO("converting to mesh data");
@@ -69,12 +63,8 @@ int main (int argc, char* argv[])
 	INFO("Mesh created: %d nodes, %d elements.", mesh->getNNodes(), mesh->getNElements());
 
 	INFO("Write it into VTU");
-	FileIO::VtuInterface writer(mesh.get());
+	MeshLib::IO::VtuInterface writer(mesh.get());
 	writer.writeToFile(outArg.getValue());
 
-	delete custom_format;
-	delete logog_cout;
-	LOGOG_SHUTDOWN();
-
-	return 0;
+	return EXIT_SUCCESS;
 }

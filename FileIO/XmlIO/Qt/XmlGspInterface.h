@@ -15,24 +15,15 @@
 #ifndef XMLGSPINTERFACE_H
 #define XMLGSPINTERFACE_H
 
-#include <functional>
 #include <vector>
 #include <string>
 
 #include <QString>
 
-#include "../XMLInterface.h"
-#include "XMLQtInterface.h"
+#include "BaseLib/IO/XmlIO/XMLInterface.h"
+#include "BaseLib/IO/XmlIO/Qt/XMLQtInterface.h"
 
-namespace MeshLib
-{
-class Mesh;
-}
-
-namespace GeoLib
-{
-class GEOObjects;
-}
+#include "DataHolderLib/Project.h"
 
 namespace FileIO
 {
@@ -40,13 +31,11 @@ namespace FileIO
 /**
  * \brief Reads and writes project information to and from XML files.
  */
-class XmlGspInterface : public XMLInterface, public XMLQtInterface
+class XmlGspInterface : public BaseLib::IO::XMLInterface,
+                        public BaseLib::IO::XMLQtInterface
 {
 public:
-	XmlGspInterface(
-	    GeoLib::GEOObjects& geoObjects,
-	    std::vector<MeshLib::Mesh*> const& mesh_vector,
-	    std::function<void(MeshLib::Mesh* const)>&& add_mesh_callback);
+	XmlGspInterface(DataHolderLib::Project &project);
 
 	virtual ~XmlGspInterface() {}
 
@@ -63,11 +52,9 @@ protected:
 
 private:
 	std::string _filename;
-	GeoLib::GEOObjects& _geoObjects;
-	std::vector<MeshLib::Mesh*> const& _mesh_vector;
-	std::function<void(MeshLib::Mesh* const)> _add_mesh_callback;
+	DataHolderLib::Project& _project;
 };
 
-}
+} // end namespace FileIO
 
 #endif // XMLGSPINTERFACE_H

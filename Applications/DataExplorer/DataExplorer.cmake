@@ -53,7 +53,9 @@ target_link_libraries(DataExplorer
 	Qt4::QtXml
 	Qt4::QtNetwork
 	ApplicationsLib
+	DataHolderLib
 	FileIO
+	InSituLib
 	QtDataView
 	QtDiagramView
 	QtStratView
@@ -61,6 +63,8 @@ target_link_libraries(DataExplorer
 	VtkAct
 	Threads::Threads
 	OGSFileConverterLib
+	vtkGUISupportQt
+	logog
 )
 
 if(CMAKE_CROSSCOMPILING)
@@ -73,13 +77,11 @@ endif()
 
 if(VTK_NETCDF_FOUND)
 	target_link_libraries(DataExplorer vtkNetCDF vtkNetCDF_cxx )
-else()
-	target_link_libraries(DataExplorer ${Shapelib_LIBRARIES} )
-endif () # Shapelib_FOUND
+endif()
 
-if (GEOTIFF_FOUND)
+if(GEOTIFF_FOUND)
 	target_link_libraries(DataExplorer ${GEOTIFF_LIBRARIES} )
-endif () # GEOTIFF_FOUND
+endif()
 
 add_dependencies (DataExplorer VtkVis)
 

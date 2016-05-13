@@ -12,6 +12,7 @@ APPEND_SOURCE_FILES(TEST_SOURCES AssemblerLib)
 APPEND_SOURCE_FILES(TEST_SOURCES BaseLib)
 APPEND_SOURCE_FILES(TEST_SOURCES FileIO)
 APPEND_SOURCE_FILES(TEST_SOURCES GeoLib)
+APPEND_SOURCE_FILES(TEST_SOURCES GeoLib/IO)
 APPEND_SOURCE_FILES(TEST_SOURCES InSituLib)
 APPEND_SOURCE_FILES(TEST_SOURCES MathLib)
 APPEND_SOURCE_FILES(TEST_SOURCES MeshLib)
@@ -33,9 +34,11 @@ target_link_libraries(testrunner
 	ApplicationsLib
 	AssemblerLib
 	FileIO
-	MeshGeoToolsLib
-	NumLib
 	GTest
+	InSituLib
+	MeshGeoToolsLib
+	MeshLib
+	NumLib
 	Threads::Threads
 )
 ADD_VTK_DEPENDENCY(testrunner)
@@ -53,7 +56,6 @@ if(OGS_BUILD_GUI)
 		QtDataView
 		QtStratView
 		VtkVis
-		vtkInteractionStyle
 	)
 endif()
 
