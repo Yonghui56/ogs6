@@ -11,15 +11,14 @@
 
 #include <memory>
 
-// TCLAP
-#include "tclap/CmdLine.h"
+#include <tclap/CmdLine.h>
 
 #include "Applications/ApplicationsLib/LogogSetup.h"
 
 #include "BaseLib/FileTools.h"
 
-#include "FileIO/readMeshFromFile.h"
-#include "FileIO/writeMeshToFile.h"
+#include "MeshLib/IO/readMeshFromFile.h"
+#include "MeshLib/IO/writeMeshToFile.h"
 
 #include "MeshLib/Mesh.h"
 #include "MeshLib/MeshEditing/AddLayerToMesh.h"
@@ -52,7 +51,7 @@ int main (int argc, char* argv[])
 
 	INFO("Reading mesh \"%s\" ... ", mesh_arg.getValue().c_str());
 	auto subsfc_mesh = std::unique_ptr<MeshLib::Mesh>(
-	    FileIO::readMeshFromFile(mesh_arg.getValue()));
+	    MeshLib::IO::readMeshFromFile(mesh_arg.getValue()));
 	if (!subsfc_mesh) {
 		ERR("Error reading mesh \"%s\".", mesh_arg.getValue().c_str());
 		return EXIT_FAILURE;
@@ -67,7 +66,7 @@ int main (int argc, char* argv[])
 	}
 
 	INFO("Writing mesh \"%s\" ... ", mesh_out_arg.getValue().c_str());
-	FileIO::writeMeshToFile(*result, mesh_out_arg.getValue());
+	MeshLib::IO::writeMeshToFile(*result, mesh_out_arg.getValue());
 	INFO("done.");
 
 	return EXIT_SUCCESS;

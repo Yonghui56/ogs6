@@ -1,7 +1,0 @@
-# Target labels
- vtkexpat
-# Source files and their labels
-D:/ogs/bb/External/vtk/src/vtk/ThirdParty/expat/vtkexpat/xmlparse.c
-D:/ogs/bb/External/vtk/src/vtk/ThirdParty/expat/vtkexpat/xmltok.c
-D:/ogs/bb/External/vtk/src/vtk/ThirdParty/expat/vtkexpat/xmlrole.c
-D:/ogs/bb/External/vtk/src/vtk/ThirdParty/expat/vtkexpat/CMakeLists.txt

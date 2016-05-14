@@ -1,4 +1,0 @@
-# CMake generation dependency list for this directory.
-D:/ogs/Applications/CLI/CMakeLists.txt
-D:/ogs/Applications/CLI/Tests.cmake
-D:/ogs/scripts/cmake/packaging/InstallDependencies.cmake

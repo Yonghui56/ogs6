@@ -10,7 +10,6 @@
 #include <random>
 #include <gtest/gtest.h>
 
-#include "AssemblerLib/LocalDataInitializer.h"
 #include "AssemblerLib/VectorMatrixAssembler.h"
 
 #include "MathLib/LinAlg/BLAS.h"
@@ -26,7 +25,9 @@
 #include "NumLib/Fem/ShapeMatrixPolicy.h"
 
 #include "ProcessLib/NumericsConfig.h"
-#include "ProcessLib/ProcessUtil.h"
+#include "ProcessLib/Utils/LocalDataInitializer.h"
+#include "ProcessLib/Utils/CreateLocalAssemblers.h"
+#include "ProcessLib/Utils/InitShapeMatrices.h"
 
 
 namespace
@@ -233,7 +234,7 @@ private:
     template<unsigned GlobalDim>
     void createLocalAssemblers(MeshLib::Mesh const& mesh)
     {
-        using LocalDataInitializer = AssemblerLib::LocalDataInitializer<
+        using LocalDataInitializer = ProcessLib::LocalDataInitializer<
             LocalAssembler, LocalAssemblerData,
             GlobalMatrix, GlobalVector, GlobalDim>;
 
@@ -272,7 +273,7 @@ void extrapolate(TestProcess<GlobalSetup> const& pcs,
     using GlobalVector = typename GlobalSetup::VectorType;
 
     auto const tolerance_dx  = 20.0 * std::numeric_limits<double>::epsilon();
-    auto const tolerance_res =  3.5 * std::numeric_limits<double>::epsilon();
+    auto const tolerance_res =  4.0 * std::numeric_limits<double>::epsilon();
 
     auto const  result   = pcs.extrapolate(property);
     auto const& x_extra  = *result.first;
