@@ -1,6 +1,4 @@
 set(SOURCES
-	AsciiRasterInterface.h
-	AsciiRasterInterface.cpp
 	CsvInterface.h
 	CsvInterface.cpp
 	GMSInterface.h
@@ -9,23 +7,12 @@ set(SOURCES
 	GMSHInterface.cpp
 	PetrelInterface.h
 	PetrelInterface.cpp
-	readGeometryFromFile.h
-	readGeometryFromFile.cpp
-	readMeshFromFile.h
-	readMeshFromFile.cpp
-	writeGeometryToFile.h
-	writeGeometryToFile.cpp
-	SHPInterface.h
-	SHPInterface.cpp
 	TetGenInterface.h
 	TetGenInterface.cpp
-	TINInterface.h
-	TINInterface.cpp
-	Writer.h
-	Writer.cpp
-	writeMeshToFile.h
-	writeMeshToFile.cpp
 )
+if(Shapelib_FOUND)
+	list(APPEND SOURCES SHPInterface.h SHPInterface.cpp)
+endif()
 
 GET_SOURCE_FILES(SOURCES_LEGACY Legacy)
 GET_SOURCE_FILES(SOURCES_GMSHIO GmshIO)
@@ -43,32 +30,21 @@ if(QT4_FOUND)
 	set(SOURCES ${SOURCES} ${SOURCES_QT_XML})
 endif()
 
-# It could be used for other MPI based DDC approach in future.
-if(OGS_USE_PETSC)
-	GET_SOURCE_FILES(SOURCES_MPI_IO MPI_IO)
-	set(SOURCES ${SOURCES} ${SOURCES_MPI_IO})
-endif()
-
 include(${PROJECT_SOURCE_DIR}/scripts/cmake/OGSEnabledElements.cmake)
 
 # Create the library
-add_library(FileIO STATIC ${SOURCES})
+add_library(FileIO ${SOURCES})
+target_link_libraries(FileIO DataHolderLib)
 
-target_link_libraries(FileIO INTERFACE
-	GeoLib
-	InSituLib
-	MeshLib
-	logog
-	shp
-)
 if(QT4_FOUND)
-	target_link_libraries(FileIO PUBLIC Qt4::QtXml Qt4::QtXmlPatterns)
-	if(WIN32 AND CMAKE_CROSSCOMPILING)
-		find_package(OpenSSL)
-		if(OPENSSL_FOUND)
-			target_link_libraries(FileIO PUBLIC Qt4::QtNetwork ${OPENSSL_LIBRARIES} ws2_32)
-		endif()
+	target_link_libraries(FileIO Qt4::QtXml Qt4::QtXmlPatterns)
+	if(WIN32 AND CMAKE_CROSSCOMPILING AND OPENSSL_FOUND)
+		target_link_libraries(FileIO Qt4::QtNetwork ${OPENSSL_LIBRARIES} ws2_32)
 	endif()
+endif()
+
+if(Shapelib_FOUND)
+	target_link_libraries(FileIO ${Shapelib_LIBRARIES})
 endif()
 
 ADD_VTK_DEPENDENCY(FileIO)

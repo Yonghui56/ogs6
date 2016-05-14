@@ -14,16 +14,15 @@
 #include <numeric>
 
 #include <tclap/CmdLine.h>
-#include <logog/include/logog.hpp>
 
 #include "Applications/ApplicationsLib/LogogSetup.h"
 
 #include "BaseLib/quicksort.h"
 #include "BaseLib/FileTools.h"
 
-#include "FileIO/readMeshFromFile.h"
-#include "FileIO/writeMeshToFile.h"
-#include "FileIO/AsciiRasterInterface.h"
+#include "MeshLib/IO/readMeshFromFile.h"
+#include "MeshLib/IO/writeMeshToFile.h"
+#include "GeoLib/IO/AsciiRasterInterface.h"
 
 #include "GeoLib/Raster.h"
 
@@ -124,11 +123,11 @@ int main (int argc, char* argv[])
 	cmd.parse( argc, argv );
 
 	// read mesh
-	std::unique_ptr<MeshLib::Mesh> dest_mesh(FileIO::readMeshFromFile(mesh_arg.getValue()));
+	std::unique_ptr<MeshLib::Mesh> dest_mesh(MeshLib::IO::readMeshFromFile(mesh_arg.getValue()));
 
 	// read raster and if required manipulate it
 	auto raster = std::unique_ptr<GeoLib::Raster>(
-		FileIO::AsciiRasterInterface::getRasterFromASCFile(raster_arg.getValue()));
+		GeoLib::IO::AsciiRasterInterface::getRasterFromASCFile(raster_arg.getValue()));
 	GeoLib::RasterHeader header (raster->getHeader());
 	if (refinement_arg.getValue() > 1) {
 		raster->refineRaster(refinement_arg.getValue());
@@ -138,7 +137,7 @@ int main (int argc, char* argv[])
 			                                      raster_arg.getValue()));
 			new_raster_fname += "-" + std::to_string(header.n_rows) + "x" +
 			                    std::to_string(header.n_cols) + ".asc";
-			FileIO::AsciiRasterInterface::writeRasterAsASC(*raster, new_raster_fname);
+			GeoLib::IO::AsciiRasterInterface::writeRasterAsASC(*raster, new_raster_fname);
 		}
 	}
 
@@ -216,7 +215,7 @@ int main (int argc, char* argv[])
 		if (!property_out)
 		{
 			ERR("Could not open file %s for writing the mapping.", property_fname.c_str());
-			return -1;
+			return EXIT_FAILURE;
 		}
 
 		for (std::size_t k(0); k < n_dest_mesh_elements; k++)
@@ -242,8 +241,8 @@ int main (int argc, char* argv[])
 			(*materialIds)[dest_mesh->getElement(dest_perm[k])->getID()] = k;
 		}
 
-		FileIO::writeMeshToFile(*dest_mesh, out_mesh_arg.getValue());
+		MeshLib::IO::writeMeshToFile(*dest_mesh, out_mesh_arg.getValue());
 	}
 
-	return 0;
+	return EXIT_SUCCESS;
 }

@@ -134,8 +134,23 @@ if(OGS_USE_PETSC)
 
 endif()
 
+find_package(OpenSSL)
+
 ## Check MPI package
 if(OGS_USE_MPI)
 	find_package(MPI REQUIRED)
 	include_directories(SYSTEM ${MPI_CXX_INCLUDE_PATH})
 endif()
+
+find_package(Shapelib)
+if(Shapelib_FOUND)
+	include_directories(SYSTEM ${Shapelib_INCLUDE_DIRS})
+elseif(OGS_BUILD_GUI)
+	message(FATAL_ERROR "Shapelib not found but it is required for OGS_BUILD_GUI!")
+endif()
+
+## Sundials cvode ode-solver library
+find_package(CVODE)
+if(CVODE_FOUND)
+    add_definitions(-DCVODE_FOUND)
+endif() # CVODE_FOUND
