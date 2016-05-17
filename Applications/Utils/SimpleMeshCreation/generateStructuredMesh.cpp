@@ -11,11 +11,7 @@
 #include <string>
 #include <vector>
 
-// TCLAP
-#include "tclap/CmdLine.h"
-
-// ThirdParty/logog
-#include "logog/include/logog.hpp"
+#include <tclap/CmdLine.h>
 
 #include "Applications/ApplicationsLib/LogogSetup.h"
 
@@ -29,7 +25,7 @@
 #include "MeshLib/MeshEnums.h"
 #include "MeshLib/MeshGenerators/MeshGenerator.h"
 
-#include "FileIO/writeMeshToFile.h"
+#include "MeshLib/IO/writeMeshToFile.h"
 
 namespace
 {
@@ -157,12 +153,12 @@ int main (int argc, char* argv[])
 	                                     [&](TCLAP::ValueArg<double> *arg){return arg->isSet();});
 	if (!isLengthSet) {
 		ERR("Missing input: Length information is not provided at all.");
-		return 1;
+		return EXIT_FAILURE;
 	} else {
 		for (unsigned i=0; i<3; i++) {
 			if (dim_used[i] && !vec_lengthArg[i]->isSet()) {
 				ERR("Missing input: Length for dimension [%d] is required but missing.", i);
-				return 1;
+				return EXIT_FAILURE;
 			}
 		}
 	}
@@ -220,9 +216,9 @@ int main (int argc, char* argv[])
 		INFO("Mesh created: %d nodes, %d elements.", mesh->getNNodes(), mesh->getNElements());
 
 		// write into a file
-		FileIO::writeMeshToFile(*(mesh.get()), mesh_out.getValue());
+		MeshLib::IO::writeMeshToFile(*(mesh.get()), mesh_out.getValue());
 	}
 
-	return 0;
+	return EXIT_SUCCESS;
 }
 

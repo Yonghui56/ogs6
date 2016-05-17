@@ -1,2 +1,0 @@
-set PATH=D:/ogs/bb/External/vtk/src/vtk-build/bin;D:/ogs/bb/External/vtk/src/vtk-build/bin/Debug;D:/ogs/bb/External/vtk/src/vtk-build/bin/Release;%PATH%
-    set PYTHONPATH=D:/ogs/bb/External/vtk/src/vtk-build/bin;D:/ogs/bb/External/vtk/src/vtk-build/bin/Debug;D:/ogs/bb/External/vtk/src/vtk-build/bin/Release;%PYTHONPATH%

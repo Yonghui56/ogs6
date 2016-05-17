@@ -1,4 +1,4 @@
-add_library(InSituLib
+add_library(InSituLib STATIC
 	VtkMappedMesh.h
 	VtkMappedMesh.cpp
 	VtkMappedMeshSource.h
@@ -9,7 +9,7 @@ add_library(InSituLib
 	VtkMeshNodalCoordinatesTemplate-impl.h
 )
 
-target_link_libraries(InSituLib INTERFACE MeshLib ${VTK_LIBRARIES})
+target_link_libraries(InSituLib MeshLib ${VTK_LIBRARIES})
 
 ADD_VTK_DEPENDENCY(InSituLib)
 

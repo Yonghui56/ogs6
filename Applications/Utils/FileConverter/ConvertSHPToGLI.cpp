@@ -17,26 +17,18 @@
 #include <iostream>
 #include <vector>
 
-// TCLAP
-#include "tclap/CmdLine.h"
-
-// ThirdParty/logog
-#include "logog/include/logog.hpp"
+#include <tclap/CmdLine.h>
 
 // ShapeLib
-#include "shape/shapefil.h"
+#include <shapefil.h>
 
-// BaseLib
-#include "LogogSimpleFormatter.h"
+#include "Applications/ApplicationsLib/LogogSetup.h"
 
-// FileIO
-#include "XmlIO/Qt/XmlGmlInterface.h"
-#include "XmlIO/Qt/XmlStnInterface.h"
-
-// GeoLib
-#include "GEOObjects.h"
-#include "Point.h"
-#include "Station.h"
+#include "GeoLib/IO/XmlIO/Qt/XmlGmlInterface.h"
+#include "GeoLib/IO/XmlIO/Qt/XmlStnInterface.h"
+#include "GeoLib/GEOObjects.h"
+#include "GeoLib/Point.h"
+#include "GeoLib/Station.h"
 
 void convertPoints (DBFHandle dbf_handle,
                     std::string const& out_fname,
@@ -88,11 +80,11 @@ void convertPoints (DBFHandle dbf_handle,
 		geo_objs.addPointVec(std::move(points), points_group_name);
 
 	if (station) {
-		FileIO::XmlStnInterface xml (geo_objs);
+		GeoLib::IO::XmlStnInterface xml (geo_objs);
 		xml.setNameForExport(points_group_name);
 		xml.writeToFile(out_fname);
 	} else {
-		FileIO::XmlGmlInterface xml (geo_objs);
+		GeoLib::IO::XmlGmlInterface xml (geo_objs);
 		xml.setNameForExport(points_group_name);
 		xml.writeToFile(out_fname);
 	}
@@ -141,10 +133,7 @@ void printFieldInformationTable(DBFHandle const& dbf_handle, std::size_t n_field
 
 int main (int argc, char* argv[])
 {
-	LOGOG_INITIALIZE();
-	logog::Cout* logog_cout (new logog::Cout);
-	BaseLib::LogogSimpleFormatter *custom_format (new BaseLib::LogogSimpleFormatter);
-	logog_cout->SetFormatter(*custom_format);
+	ApplicationsLib::LogogSetup logog_setup;
 
 	TCLAP::CmdLine cmd("Converts points contained in shape file", ' ', "0.1");
 	TCLAP::ValueArg<std::string> shapefile_arg("s",
@@ -173,7 +162,7 @@ int main (int argc, char* argv[])
 			ERR("Shape file contains %d polylines.", number_of_elements);
 			ERR("This programm only handles only files containing points.");
 			SHPClose(hSHP);
-			return 0;
+			return EXIT_SUCCESS;
 		}
 		SHPClose(hSHP);
 	} else {
@@ -240,9 +229,5 @@ int main (int argc, char* argv[])
 		ERR("Could not open the database file.");
 	}
 
-	delete custom_format;
-	delete logog_cout;
-	LOGOG_SHUTDOWN();
-
-	return 0;
+	return EXIT_SUCCESS;
 }
