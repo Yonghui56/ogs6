@@ -28,10 +28,10 @@ PiecewiseLinearInterpolation::PiecewiseLinearInterpolation(
     : _supp_pnts(std::move(supporting_points)),
       _values_at_supp_pnts(std::move(values_at_supp_pnts))
 {
-	if (!supp_pnts_sorted) {
-		BaseLib::quicksort<double, double>(_supp_pnts, static_cast<std::size_t> (0),
-		                                   _supp_pnts.size(), _values_at_supp_pnts);
-	}
+    if (!supp_pnts_sorted) {
+        BaseLib::quicksort<double, double>(_supp_pnts, static_cast<std::size_t> (0),
+                                           _supp_pnts.size(), _values_at_supp_pnts);
+    }
 }
 
 double PiecewiseLinearInterpolation::getValue(double pnt_to_interpolate) const
@@ -58,7 +58,7 @@ double PiecewiseLinearInterpolation::getValue(double pnt_to_interpolate) const
 	const double m((_values_at_supp_pnts[interval_idx + 1] - _values_at_supp_pnts[interval_idx])
 					/ (_supp_pnts[interval_idx + 1] - _supp_pnts[interval_idx]));
 
-	return m * (pnt_to_interpolate - _supp_pnts[interval_idx]) + _values_at_supp_pnts[interval_idx];
+    return m * (pnt_to_interpolate - _supp_pnts[interval_idx]) + _values_at_supp_pnts[interval_idx];
 }
 
 double PiecewiseLinearInterpolation::getSlope(double pnt_to_interpolate) const
