@@ -203,7 +203,7 @@ void ProjectData::buildProcesses()
 					_process_variables, _parameters, pc));
 		}
 		*/
-		
+		/*
 		else if (type == "RICHARDS_FLOW")
 		{
 			// The existence check of the in the configuration referenced
@@ -216,7 +216,7 @@ void ProjectData::buildProcesses()
 					*_mesh_vec[0], *nl_slv, std::move(time_disc),
 					_process_variables, _parameters, pc,_curves));
 		}
-		
+		*/
 		else
 		{
 			ERR("Unknown process type: %s", type.c_str());
